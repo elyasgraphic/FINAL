@@ -1,3 +1,27 @@
 /* =============
     Typography
 ============= */
+@mixin headline{
+    font-family:'Source Sans Pro', sans-serif;
+    font-weight: none;
+    letter-spacing: -4.5;
+    color: black;
+}
+@mixin subheadline{
+    font-family:'Source Sans 3', sans-serif;
+    font-weight: none;
+    letter-spacing: -2.5;
+    color: black;
+}
+h1{
+    @include headline()
+}
+h2{
+    @include headline()
+}
+h3{
+    @include subheadline()
+}
+p{
+    @include subheadline()
+}
