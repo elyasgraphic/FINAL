@@ -2,10 +2,28 @@
     display: grid;
     grid-template-columns: 1fr;
     
+    @include lg{
+        ul{
+            list-style: none;
+            display:flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: center;
+            justify-content: space-evenly;
+        }
+    }
    #hundredmaterials{
     h1{
-        display: flex;
-        flex-direction: row;
+    text-align: center;
+    }
+    a{
+        h3{
+            text-align: center;
+        }
+        
+    }
+    img{
+        width: 100%;
     }
 }
 #awardwinning{
@@ -13,23 +31,23 @@
         display: flex;
         flex-direction: row;
     }
+    img{
+        width: 50%;
+    }
 }
 #Backers{
     h2{
-        justify-content: center;
+        text-align: center;
     }
 }
     #backer{
             list-style: none;
-            display:flex;
-            flex-direction: row;
-            align-items: center;
-            justify-content: center;
+            justify-content: space-between;
             justify-content: space-evenly;
     }
 
     img{
-        width: 100%;
+        width: 40%;
     }
 
 }

@@ -1,7 +1,7 @@
 #bottom{
     display: grid;
     grid-template-columns: 1fr 1fr;
-    
+
     h2{
         display: flex;
         flex-direction: row;
@@ -9,5 +9,8 @@
     button{
         display: flex;
         flex-direction: row;
+    }
+    picture{
+        align-items: center;
     }
 }

@@ -19,7 +19,6 @@
     #second{
         ul{
              grid-area: second;
-             color: white;
          h5{
                 color: white;
             }   
@@ -28,8 +27,12 @@
         #third{
             grid-area: third;
             ul{
-                display: flex;
-                flex-direction: row;
+                list-style: none;
+            display:flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: center;
+            justify-content: space-evenly;
                 
             h5{
                    color: white;

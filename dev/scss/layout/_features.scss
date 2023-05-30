@@ -1,64 +1,80 @@
 #features{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 64px;
+    margin-left: 100px;
+    margin-right: 100px;
+    grid-template-areas: 
+    "cooling"
+    "refine"
+    "faster";
 
     @include lg{
-        grid-template-columns: 3fr;
-        display:flex;
-        flex-direction: row;
+        grid-template-columns: 1fr 1fr 1fr;
         justify-content: space-evenly;
         grid-template-areas: 
         "cooling refined faster";
     }
 
+    h1{
+        text-align: center;
+    }
+
    #COOLING {
     background-color: #95D0DD;
-    width: fit-content;
     list-style: none;
-    margin-left: 120px;
-    margin-right: 120px;
-    margin-bottom: 40px ;
+
     grid-area: cooling;
     h2{
         color: white;
+        text-align: center;
               padding-bottom: 73px ;
     }
     p{
         color: white;
         padding-bottom:27px;
+        text-align: center;
+    }
+    img{
+        align-items: center;
     }
 }
 #REFINEDCUT {
     background-color: #95D0DD;
     list-style: none;
-    width: fit-content;
-    margin-left: 120px;
-    margin-right: 120px;
-    margin-bottom: 40px ;
     justify-content: center;
     grid-area: refined;
     h2{
         color: white;
+        text-align: center;
         padding-bottom: 73px ;
+        text-align: center;
     }
     p{
         color: white;
         padding-bottom:27px;
+        text-align: center;
+    }
+    img{
+        align-items: center;
     }
 }
 #Faster {
     background-color: #95D0DD;
     list-style: none;
-    width: fit-content;
-    margin-left: 120px;
-    margin-right: 120px;
-    margin-bottom: 40px ;
     grid-area: faster;
 h2{
     color: white;
+    text-align: center;
     padding-bottom: 73px ;
 }
 p{
     color: white;
     padding-bottom:27px;
+    text-align: center;
+}
+img{
+    align-items: center;
 }
 } 
 }

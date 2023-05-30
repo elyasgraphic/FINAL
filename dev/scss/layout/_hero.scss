@@ -1,20 +1,47 @@
-#hero{
-    @include lg{
-        h1{
-            font-size: 200px;
+#hero {
+    img {
+        width: 100%;
+        position: relative;
+        z-index: 1;
+    }
+
+    h1 {
+        font-size: 40px;
+        text-align: center;
+        position: absolute;
+        top: 50%;
+        z-index: 0;
+    }
+
+    h3 {
+        font-size: 13px;
+        text-align: center;
+        position: absolute;
+        top: 50%;
+        z-index: 2;
+    }
+
+    @include lg {
+        img{
+            z-index: 1;
+            position: relative;
         }
-        h3{
-           font-size: 64px;
+        h1 {
+            font-size: 200px;
+            text-align: center;
+            position: absolute;
+            top: 50%;
+            z-index: 0;
+        }
+
+        h3 {
+            font-size: 64px;
+            text-align: center;
+            position: absolute;
+            top: 50%;
+            z-index: 2;
         }
     }
 
-    img{
-        width: 100%;
-    }
-    h1{
-        font-size: 40px;
-    }
-    h3{
-        font-size: 13px;
-    }
+
 }

@@ -9,10 +9,18 @@
         align-items: center;
         justify-content: center;
         justify-content: space-evenly;
+        border-radius: none;
         
         button{
             border-radius: none;
             color: white;
+
+            h4{
+                text-underline-position: under;
+            }
+            img{
+                border-radius: none;
+            }
         }
     }
 

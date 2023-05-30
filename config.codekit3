@@ -57,6 +57,19 @@
       "q" : 90,
       "rq" : 75
     },
+    "\/deploy\/img\/butterfly.png" : {
+      "ft" : 32768,
+      "iS" : 9145,
+      "oA" : 0,
+      "oAP" : "\/deploy\/img\/butterfly.png",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 0,
+      "oT" : 1,
+      "ou" : "lpckwebp-none",
+      "q" : 90,
+      "rq" : 75
+    },
     "\/deploy\/img\/Cart.svg" : {
       "ft" : 2097152,
       "miP" : 0,
@@ -171,6 +184,19 @@
       "q" : 90,
       "rq" : 75
     },
+    "\/deploy\/img\/heronrock.png" : {
+      "ft" : 32768,
+      "iS" : 3332,
+      "oA" : 0,
+      "oAP" : "\/deploy\/img\/heronrock.png",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 0,
+      "oT" : 1,
+      "ou" : "lpckwebp-none",
+      "q" : 90,
+      "rq" : 75
+    },
     "\/deploy\/img\/Hundred-Materials-Mobile.png" : {
       "ft" : 32768,
       "iS" : 190640,
@@ -184,11 +210,11 @@
       "q" : 90,
       "rq" : 75
     },
-    "\/deploy\/img\/HundredMaterials - DESKTOP.png" : {
+    "\/deploy\/img\/HundredMaterials-DESKTOP.png" : {
       "ft" : 32768,
       "iS" : 282223,
       "oA" : 0,
-      "oAP" : "\/deploy\/img\/HundredMaterials - DESKTOP.png",
+      "oAP" : "\/deploy\/img\/HundredMaterials-DESKTOP.png",
       "oF" : 0,
       "oIPL" : 0,
       "opt" : 0,
@@ -307,6 +333,19 @@
       "iS" : 2814,
       "oA" : 0,
       "oAP" : "\/deploy\/img\/Times.png",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 0,
+      "oT" : 1,
+      "ou" : "lpckwebp-none",
+      "q" : 90,
+      "rq" : 75
+    },
+    "\/deploy\/img\/we.png" : {
+      "ft" : 32768,
+      "iS" : 8374,
+      "oA" : 0,
+      "oAP" : "\/deploy\/img\/we.png",
       "oF" : 0,
       "oIPL" : 0,
       "opt" : 0,
