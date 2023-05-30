@@ -327,18 +327,30 @@ template {
 ============= */
 h1 {
   font-family: "Source Sans Pro", sans-serif;
+  font-weight: none;
+  letter-spacing: -4.5;
+  color: black;
 }
 
 h2 {
   font-family: "Source Sans Pro", sans-serif;
+  font-weight: none;
+  letter-spacing: -4.5;
+  color: black;
 }
 
 h3 {
   font-family: "Source Sans 3", sans-serif;
+  font-weight: none;
+  letter-spacing: -2.5;
+  color: black;
 }
 
 p {
   font-family: "Source Sans 3", sans-serif;
+  font-weight: none;
+  letter-spacing: -2.5;
+  color: black;
 }
 
 /* =============
@@ -365,9 +377,194 @@ textarea {
 /* =============
     Navigation
 ============= */
-/* =============
-    Header
-============= */
-/* =============
-    Footer
-============= */
+#header {
+  display: grid;
+  background-color: black;
+}
+#header #headernotes {
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  justify-content: space-evenly;
+}
+#header #headernotes button {
+  border-radius: none;
+  color: white;
+}
+
+@media (min-width: 1024px) {
+  #hero h1 {
+    font-size: 200px;
+  }
+  #hero h3 {
+    font-size: 64px;
+  }
+}
+#hero img {
+  width: 100%;
+}
+#hero h1 {
+  font-size: 40px;
+}
+#hero h3 {
+  font-size: 13px;
+}
+
+.footer {
+  display: grid;
+  grid-template-columns: 1fr;
+  background-color: black;
+}
+@media (min-width: 1024px) {
+  .footer {
+    grid-template-columns: 3fr;
+    grid-template-areas: "first second third";
+  }
+}
+.footer #first ul {
+  grid-area: first;
+}
+.footer #first ul button {
+  color: white;
+}
+.footer #second ul {
+  grid-area: second;
+  color: white;
+}
+.footer #second ul h5 {
+  color: white;
+}
+.footer #third {
+  grid-area: third;
+}
+.footer #third ul {
+  display: flex;
+  flex-direction: row;
+}
+.footer #third ul h5 {
+  color: white;
+}
+
+#awards h1 {
+  justify-content: center;
+}
+#awards ul {
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  justify-content: space-evenly;
+}
+#awards img {
+  width: 100%;
+}
+
+@media (min-width: 1024px) {
+  #features {
+    grid-template-columns: 3fr;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    grid-template-areas: "cooling refined faster";
+  }
+}
+#features #COOLING {
+  background-color: #95D0DD;
+  width: fit-content;
+  list-style: none;
+  margin-left: 120px;
+  margin-right: 120px;
+  margin-bottom: 40px;
+  grid-area: cooling;
+}
+#features #COOLING h2 {
+  color: white;
+  padding-bottom: 73px;
+}
+#features #COOLING p {
+  color: white;
+  padding-bottom: 27px;
+}
+#features #REFINEDCUT {
+  background-color: #95D0DD;
+  list-style: none;
+  width: fit-content;
+  margin-left: 120px;
+  margin-right: 120px;
+  margin-bottom: 40px;
+  justify-content: center;
+  grid-area: refined;
+}
+#features #REFINEDCUT h2 {
+  color: white;
+  padding-bottom: 73px;
+}
+#features #REFINEDCUT p {
+  color: white;
+  padding-bottom: 27px;
+}
+#features #Faster {
+  background-color: #95D0DD;
+  list-style: none;
+  width: fit-content;
+  margin-left: 120px;
+  margin-right: 120px;
+  margin-bottom: 40px;
+  grid-area: faster;
+}
+#features #Faster h2 {
+  color: white;
+  padding-bottom: 73px;
+}
+#features #Faster p {
+  color: white;
+  padding-bottom: 27px;
+}
+
+#reviews ul {
+  list-style: none;
+  justify-content: center;
+}
+
+#advertisements {
+  display: grid;
+  grid-template-columns: 1fr;
+}
+#advertisements #hundredmaterials h1 {
+  display: flex;
+  flex-direction: row;
+}
+#advertisements #awardwinning h1 {
+  display: flex;
+  flex-direction: row;
+}
+#advertisements #Backers h2 {
+  justify-content: center;
+}
+#advertisements #backer {
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  justify-content: space-evenly;
+}
+#advertisements img {
+  width: 100%;
+}
+
+#bottom {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+#bottom h2 {
+  display: flex;
+  flex-direction: row;
+}
+#bottom button {
+  display: flex;
+  flex-direction: row;
+}

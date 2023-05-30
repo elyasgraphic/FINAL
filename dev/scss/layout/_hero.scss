@@ -1,0 +1,20 @@
+#hero{
+    @include lg{
+        h1{
+            font-size: 200px;
+        }
+        h3{
+           font-size: 64px;
+        }
+    }
+
+    img{
+        width: 100%;
+    }
+    h1{
+        font-size: 40px;
+    }
+    h3{
+        font-size: 13px;
+    }
+}
