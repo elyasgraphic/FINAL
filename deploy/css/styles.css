@@ -408,17 +408,17 @@ textarea {
 }
 #hero h1 {
   font-size: 40px;
-  text-align: center;
   position: absolute;
-  top: 50%;
+  top: 35%;
   z-index: 0;
+  text-align: center;
 }
 #hero h3 {
   font-size: 13px;
-  text-align: center;
   position: absolute;
-  top: 50%;
+  top: 45%;
   z-index: 2;
+  text-align: center;
 }
 @media (min-width: 1024px) {
   #hero img {
@@ -427,17 +427,17 @@ textarea {
   }
   #hero h1 {
     font-size: 200px;
-    text-align: center;
     position: absolute;
-    top: 50%;
+    top: 40%;
     z-index: 0;
+    text-align: center;
   }
   #hero h3 {
     font-size: 64px;
-    text-align: center;
     position: absolute;
-    top: 50%;
+    top: 70%;
     z-index: 2;
+    text-align: center;
   }
 }
 
@@ -500,17 +500,18 @@ textarea {
   grid-gap: 64px;
   margin-left: 100px;
   margin-right: 100px;
-  grid-template-areas: "cooling" "refine" "faster";
+  grid-template-areas: "title" "cooling" "refine" "faster";
 }
 @media (min-width: 1024px) {
   #features {
     grid-template-columns: 1fr 1fr 1fr;
     justify-content: space-evenly;
-    grid-template-areas: "cooling refined faster";
+    grid-template-areas: "title title title" "cooling refined faster";
   }
 }
 #features h1 {
   text-align: center;
+  grid-area: title;
 }
 #features #COOLING {
   background-color: #95D0DD;
@@ -591,12 +592,11 @@ textarea {
 }
 #advertisements #hundredmaterials h1 {
   text-align: center;
-}
-#advertisements #hundredmaterials a h3 {
-  text-align: center;
+  font-size: 40px;
 }
 #advertisements #hundredmaterials img {
   width: 100%;
+  position: relative;
 }
 #advertisements #awardwinning h1 {
   display: flex;
@@ -614,21 +614,39 @@ textarea {
   justify-content: space-evenly;
 }
 #advertisements img {
-  width: 40%;
+  width: 75%;
 }
 
 #bottom {
   display: grid;
   grid-template-columns: 1fr 1fr;
-}
-#bottom h2 {
-  display: flex;
-  flex-direction: row;
-}
-#bottom button {
-  display: flex;
-  flex-direction: row;
+  grid-template-areas: "img txt";
 }
 #bottom picture {
+  grid-area: img;
   align-items: center;
+}
+#bottom h2 {
+  grid-area: txt;
+  text-align: left;
+  font-size: 36px;
+}
+#bottom a {
+  grid-area: txt;
+  text-align: left;
+  font-size: 13px;
+}
+@media (min-width: 1024px) {
+  #bottom {
+    grid-template-columns: 1fr;
+    grid-template-areas: "img" "txt";
+  }
+  #bottom h2 {
+    font-size: 128px;
+    text-align: center;
+  }
+  #bottom a {
+    font-size: 32px;
+    text-align: right;
+  }
 }

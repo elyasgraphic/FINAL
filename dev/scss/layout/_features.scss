@@ -5,6 +5,7 @@
     margin-left: 100px;
     margin-right: 100px;
     grid-template-areas: 
+    "title"
     "cooling"
     "refine"
     "faster";
@@ -13,11 +14,13 @@
         grid-template-columns: 1fr 1fr 1fr;
         justify-content: space-evenly;
         grid-template-areas: 
+        "title title title"
         "cooling refined faster";
     }
 
     h1{
         text-align: center;
+        grid-area: title;
     }
 
    #COOLING {

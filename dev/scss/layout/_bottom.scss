@@ -1,16 +1,37 @@
 #bottom{
     display: grid;
     grid-template-columns: 1fr 1fr;
+    grid-template-areas: 
+    "img txt";
 
-    h2{
-        display: flex;
-        flex-direction: row;
-    }
-    button{
-        display: flex;
-        flex-direction: row;
-    }
     picture{
+        grid-area: img;
         align-items: center;
+    }
+    h2{
+        grid-area: txt;
+        text-align: left;
+        font-size: 36px;
+
+    }
+    a{
+        grid-area: txt;
+        text-align: left;
+        font-size: 13px;
+    }
+    @include lg{
+        grid-template-columns: 1fr;
+        grid-template-areas: 
+        "img"
+        "txt";
+
+        h2{
+            font-size: 128px;
+            text-align: center;
+        }
+        a{
+            font-size: 32px;
+            text-align: right;
+        }
     }
 }
