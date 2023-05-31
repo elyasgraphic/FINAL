@@ -1,35 +1,41 @@
-.footer{
+footer{
     display: grid;
     grid-template-columns: 1fr;
     background-color: black;
+    grid-template-areas: 
+    "first"
+    "second"
+    "third";
     
-    @include lg{
-        grid-template-columns: 3fr;
-        grid-template-areas: 
-        "first second third";
-    }
+  
     #first{    
-    ul{
         grid-area: first;
-     button{
+        ul{
+            list-style: none;
+            
+           button{
             color: white;
-        }   
+        } 
+        }
+     
     } 
-    }
     #second{
         ul{
-             grid-area: second;
+            list-style: none;
+            color: white;
+        }
          h5{
                 color: white;
             }   
         } 
-        }
         #third{
             grid-area: third;
+            h4{
+                color: white;
+            }
             ul{
-                list-style: none;
-            display:flex;
-            flex-direction: row;
+            list-style: none;
+            align-items: row;
             align-items: center;
             justify-content: center;
             justify-content: space-evenly;
@@ -37,6 +43,11 @@
             h5{
                    color: white;
                }   
-           } 
+           }  
+            @include lg{
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-areas: 
+        "first second third";
+    }
            }
         }

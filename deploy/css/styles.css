@@ -441,42 +441,49 @@ textarea {
   }
 }
 
-.footer {
+footer {
   display: grid;
   grid-template-columns: 1fr;
   background-color: black;
+  grid-template-areas: "first" "second" "third";
 }
-@media (min-width: 1024px) {
-  .footer {
-    grid-template-columns: 3fr;
-    grid-template-areas: "first second third";
-  }
-}
-.footer #first ul {
+footer #first {
   grid-area: first;
 }
-.footer #first ul button {
+footer #first ul {
+  list-style: none;
+}
+footer #first ul button {
   color: white;
 }
-.footer #second ul {
-  grid-area: second;
-}
-.footer #second ul h5 {
+footer #second ul {
+  list-style: none;
   color: white;
 }
-.footer #third {
+footer #second h5 {
+  color: white;
+}
+footer #third {
   grid-area: third;
 }
-.footer #third ul {
+footer #third h4 {
+  color: white;
+}
+footer #third ul {
   list-style: none;
-  display: flex;
-  flex-direction: row;
+  align-items: row;
   align-items: center;
   justify-content: center;
   justify-content: space-evenly;
 }
-.footer #third ul h5 {
+footer #third ul h5 {
   color: white;
+}
+@media (min-width: 1024px) {
+  footer #third {
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-areas: "first second third";
+  }
 }
 
 #awards h1 {
