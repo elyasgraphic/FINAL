@@ -3,6 +3,9 @@
     grid-template-columns: 1fr;
     
     @include lg{
+        h1{
+            text-align: center;
+        }
         ul{
             list-style: none;
             display:flex;
@@ -14,13 +17,17 @@
     }
    #hundredmaterials{
     h1{
-    text-align: center;
+    text-align: right;
     font-size: 40px;
-
+    position: absolute;
+    z-index: 1;
+    right: 0;
+    
     }
     img{
         width: 100%;
         position: relative;
+        z-index: 0;
     }
 }
 #awardwinning{

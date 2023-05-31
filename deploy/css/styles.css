@@ -581,6 +581,9 @@ textarea {
   grid-template-columns: 1fr;
 }
 @media (min-width: 1024px) {
+  #advertisements h1 {
+    text-align: center;
+  }
   #advertisements ul {
     list-style: none;
     display: flex;
@@ -591,12 +594,16 @@ textarea {
   }
 }
 #advertisements #hundredmaterials h1 {
-  text-align: center;
+  text-align: right;
   font-size: 40px;
+  position: absolute;
+  z-index: 1;
+  right: 0;
 }
 #advertisements #hundredmaterials img {
   width: 100%;
   position: relative;
+  z-index: 0;
 }
 #advertisements #awardwinning h1 {
   display: flex;
