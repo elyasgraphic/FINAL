@@ -390,14 +390,14 @@ textarea {
   justify-content: space-evenly;
   border-radius: none;
 }
-#header #headernotes button {
+#header #headernotes a {
   border-radius: none;
   color: white;
 }
-#header #headernotes button h4 {
+#header #headernotes a h4 {
   text-underline-position: under;
 }
-#header #headernotes button img {
+#header #headernotes a img {
   border-radius: none;
 }
 
@@ -409,14 +409,18 @@ textarea {
 #hero h1 {
   font-size: 40px;
   position: absolute;
-  top: 35%;
+  top: 25%;
+  left: 0;
+  right: 0;
   z-index: 0;
   text-align: center;
 }
 #hero h3 {
   font-size: 13px;
   position: absolute;
-  top: 45%;
+  top: 31%;
+  left: 0;
+  right: 0;
   z-index: 2;
   text-align: center;
 }
@@ -428,14 +432,14 @@ textarea {
   #hero h1 {
     font-size: 200px;
     position: absolute;
-    top: 40%;
+    top: 35%;
     z-index: 0;
     text-align: center;
   }
   #hero h3 {
     font-size: 64px;
     position: absolute;
-    top: 70%;
+    top: 65%;
     z-index: 2;
     text-align: center;
   }
@@ -447,43 +451,51 @@ footer {
   background-color: black;
   grid-template-areas: "first" "second" "third";
 }
-footer #first {
+@media (min-width: 1024px) {
+  footer {
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-areas: "first second third";
+  }
+}
+
+#first {
   grid-area: first;
 }
-footer #first ul {
+#first ul {
   list-style: none;
 }
-footer #first ul button {
+#first ul a {
+  border-radius: none;
   color: white;
 }
-footer #second ul {
+
+#second {
+  grid-area: second;
+}
+#second ul {
   list-style: none;
   color: white;
 }
-footer #second h5 {
+#second h5 {
   color: white;
 }
-footer #third {
+
+#third {
   grid-area: third;
 }
-footer #third h4 {
+#third h4 {
   color: white;
 }
-footer #third ul {
+#third ul {
   list-style: none;
+  flex-direction: row;
   align-items: row;
   align-items: center;
   justify-content: center;
   justify-content: space-evenly;
 }
-footer #third ul h5 {
+#third ul h5 {
   color: white;
-}
-@media (min-width: 1024px) {
-  footer #third {
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-areas: "first second third";
-  }
 }
 
 #awards h1 {
@@ -536,7 +548,9 @@ footer #third ul h5 {
   text-align: center;
 }
 #features #COOLING img {
-  align-items: center;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
 }
 #features #REFINEDCUT {
   background-color: #95D0DD;
@@ -556,7 +570,9 @@ footer #third ul h5 {
   text-align: center;
 }
 #features #REFINEDCUT img {
-  align-items: center;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
 }
 #features #Faster {
   background-color: #95D0DD;
@@ -574,7 +590,9 @@ footer #third ul h5 {
   text-align: center;
 }
 #features #Faster img {
-  align-items: center;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
 }
 
 #reviews ul {
@@ -606,6 +624,7 @@ footer #third ul h5 {
   position: absolute;
   z-index: 1;
   right: 0;
+  top: 670;
 }
 #advertisements #hundredmaterials img {
   width: 100%;
@@ -638,7 +657,7 @@ footer #third ul h5 {
 }
 #bottom picture {
   grid-area: img;
-  align-items: center;
+  text-align: center;
 }
 #bottom h2 {
   grid-area: txt;
@@ -662,5 +681,179 @@ footer #third ul h5 {
   #bottom a {
     font-size: 32px;
     text-align: right;
+  }
+}
+
+#glowforge {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-areas: "picture" "information" "airpicture" "airfilter";
+}
+#glowforge #pocture {
+  grid-area: picture;
+}
+#glowforge #info {
+  grid-area: information;
+}
+#glowforge #info h3 {
+  font-size: 32px;
+  color: black;
+}
+#glowforge #info h5 {
+  font-size: 15px;
+  color: black;
+}
+#glowforge #info #buttons {
+  font-size: 20px;
+  color: white;
+  background-color: #5AB5CB;
+  background-size: auto;
+}
+#glowforge #info p {
+  font-size: 16px;
+  color: black;
+}
+#glowforge #airpicture {
+  grid-area: airpicture;
+  width: 100%;
+}
+#glowforge #airfilter {
+  grid-area: airfilter;
+}
+#glowforge #airfilter h3 {
+  font-size: 32px;
+  color: black;
+}
+#glowforge #airfilter p {
+  font-size: 10px;
+  color: black;
+}
+@media (min-width: 1024px) {
+  #glowforge {
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: "picture information" "airpicture airfilter";
+  }
+}
+
+#work {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-areas: "dimension" "work" "images" "materials" "warning" "software" "camera" "imageseries";
+}
+#work #dimensionn {
+  grid-area: dimension;
+}
+#work #dimensionn h2 {
+  color: black;
+}
+#work #dimensionn p {
+  color: black;
+}
+#work #workkkk {
+  grid-area: work;
+}
+#work #workkkk h2 {
+  color: black;
+}
+#work #workkkk p {
+  color: black;
+}
+#work #imageprint {
+  grid-area: images;
+}
+#work #materials {
+  grid-area: materials;
+}
+#work #materials h2 {
+  color: black;
+}
+#work #materials p {
+  color: black;
+}
+#work #warning {
+  grid-area: warning;
+  background-color: #4791A2;
+  color: white;
+}
+#work #SOFTWARE {
+  grid-area: software;
+}
+#work #SOFTWARE h2 {
+  color: black;
+}
+#work #SOFTWARE p {
+  color: black;
+}
+#work #Camera {
+  grid-area: camera;
+}
+#work #Camera h2 {
+  color: black;
+}
+#work #Camera p {
+  color: black;
+}
+#work #imageseries {
+  grid-area: imageseries;
+}
+@media (min-width: 1024px) {
+  #work {
+    display: flex;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: "dimension images" "work images" "materials imageseries" "warning warning" "software camera";
+  }
+}
+
+#reviews02 {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-areas: "title" "userreviews" "bottombutton";
+  margin-bottom: 78px;
+}
+#reviews02 h2 {
+  grid-area: title;
+  color: black;
+  text-align: center;
+  margin-bottom: 24px;
+  margin-top: 93px;
+}
+#reviews02 #users {
+  grid-area: userreviews;
+  display: flex;
+  flex-direction: row;
+  background-color: black;
+  background-size: contain;
+  margin-left: 16px;
+  margin-right: 16px;
+  width: 358px;
+  height: 251px;
+}
+#reviews02 #users #content {
+  border-color: white;
+}
+#reviews02 #users #content h4 {
+  flex-direction: row;
+  text-align: left;
+  color: white;
+  font-size: 12px;
+}
+#reviews02 #users #content p {
+  flex-direction: row;
+  font-size: 7px;
+  text-align: left;
+  color: white;
+}
+#reviews02 #users #content img {
+  width: 25%;
+}
+#reviews02 #users a {
+  grid-area: bottombutton;
+  color: black;
+  text-align: center;
+}
+@media (min-width: 1024px) {
+  #reviews02 {
+    grid-template-columns: 1fr;
+    grid-template-areas: "title" "userreviews" "bottombutton";
   }
 }

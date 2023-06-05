@@ -1,0 +1,58 @@
+#reviews02{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-areas:
+    "title"
+    "userreviews"
+    "bottombutton" ;
+    margin-bottom: 78px;
+    h2{
+        grid-area: title;
+        color: black;
+        text-align: center;
+        margin-bottom: 24px;
+        margin-top: 93px ;
+    }
+    #users{
+        grid-area: userreviews;
+        display: flex;
+        flex-direction: row;
+        background-color: black;
+        background-size: contain;
+        margin-left: 16px;
+        margin-right: 16px;
+        width: 358px;
+        height: 251px;
+        #content{
+            border-color: white;
+             h4{
+                flex-direction: row;
+            text-align: left;
+            color: white;
+            font-size: 12px;
+        }
+        p{
+            flex-direction: row;
+            font-size: 7px;
+            text-align: left;
+            color: white;
+        }
+        img{
+            width: 25%;
+        }
+    }
+    a{
+        grid-area: bottombutton;
+        color: black;
+        text-align: center;
+    }
+        }
+       
+    @include lg{
+        grid-template-columns: 1fr;
+        grid-template-areas: 
+        "title"
+        "userreviews"
+        "bottombutton";
+    }
+}

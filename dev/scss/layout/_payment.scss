@@ -1,0 +1,66 @@
+#glowforge {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-areas:
+        "picture"
+        "information"
+        "airpicture"
+        "airfilter";
+
+    #pocture {
+        grid-area: picture;
+    }
+
+    #info {
+        grid-area: information;
+
+        h3 {
+            font-size: 32px;
+            color: black
+        }
+         h5 {
+            font-size: 15px;
+            color: black;
+        }
+        img{
+
+        }
+        #buttons {
+            font-size: 20px;
+            color: white;
+            background-color: #5AB5CB;
+            background-size: auto;
+        }
+        p {
+            font-size: 16px;
+            color: black;
+        }
+    }
+
+    #airpicture {
+        grid-area: airpicture;
+        width: 100%;
+    }
+
+    #airfilter {
+        grid-area: airfilter;
+
+        h3 {
+            font-size: 32px;
+            color: black;
+        }
+
+        p {
+            font-size: 10px;
+            color: black;
+        }
+    }
+
+    @include lg {
+        grid-template-columns: 1fr 1fr;
+        grid-template-areas:
+            "picture information"
+            "airpicture airfilter";
+            
+        }
+    }

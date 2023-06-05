@@ -9,6 +9,14 @@
   ],
   "creatorBuild" : "34472",
   "files" : {
+    "\/deploy\/checkout_page.html" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/deploy\/checkout_page.html",
+      "oF" : 0
+    },
     "\/deploy\/css\/styles.css" : {
       "aP" : 1,
       "bl" : 0,
@@ -44,11 +52,63 @@
       "plM" : 52780316221407,
       "prP" : 0
     },
+    "\/deploy\/img\/affirm.png" : {
+      "ft" : 32768,
+      "iS" : 3310,
+      "oA" : 0,
+      "oAP" : "\/deploy\/img\/affirm.png",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 0,
+      "oT" : 1,
+      "ou" : "lpckwebp-none",
+      "q" : 90,
+      "rq" : 75
+    },
+    "\/deploy\/img\/airfilter.png" : {
+      "ft" : 32768,
+      "iS" : 28299,
+      "oA" : 0,
+      "oAP" : "\/deploy\/img\/airfilter.png",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 0,
+      "oT" : 1,
+      "ou" : "lpckwebp-none",
+      "q" : 90,
+      "rq" : 75
+    },
+    "\/deploy\/img\/applepay.png" : {
+      "ft" : 32768,
+      "iS" : 2685,
+      "oA" : 0,
+      "oAP" : "\/deploy\/img\/applepay.png",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 0,
+      "oT" : 1,
+      "ou" : "lpckwebp-none",
+      "q" : 90,
+      "rq" : 75
+    },
     "\/deploy\/img\/AWARD WINNING MAN.png" : {
       "ft" : 32768,
       "iS" : 829021,
       "oA" : 0,
       "oAP" : "\/deploy\/img\/AWARD WINNING MAN.png",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 0,
+      "oT" : 1,
+      "ou" : "lpckwebp-none",
+      "q" : 90,
+      "rq" : 75
+    },
+    "\/deploy\/img\/blackcarving.png" : {
+      "ft" : 32768,
+      "iS" : 90773,
+      "oA" : 0,
+      "oAP" : "\/deploy\/img\/blackcarving.png",
       "oF" : 0,
       "oIPL" : 0,
       "opt" : 0,
@@ -119,11 +179,50 @@
       "q" : 90,
       "rq" : 75
     },
+    "\/deploy\/img\/FEATURES + ICONS.png" : {
+      "ft" : 32768,
+      "iS" : 10590,
+      "oA" : 0,
+      "oAP" : "\/deploy\/img\/FEATURES + ICONS.png",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 0,
+      "oT" : 1,
+      "ou" : "lpckwebp-none",
+      "q" : 90,
+      "rq" : 75
+    },
     "\/deploy\/img\/Forbes.png" : {
       "ft" : 32768,
       "iS" : 4110,
       "oA" : 0,
       "oAP" : "\/deploy\/img\/Forbes.png",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 0,
+      "oT" : 1,
+      "ou" : "lpckwebp-none",
+      "q" : 90,
+      "rq" : 75
+    },
+    "\/deploy\/img\/glow-01.png" : {
+      "ft" : 32768,
+      "iS" : 179168,
+      "oA" : 0,
+      "oAP" : "\/deploy\/img\/glow-01.png",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 0,
+      "oT" : 1,
+      "ou" : "lpckwebp-none",
+      "q" : 90,
+      "rq" : 75
+    },
+    "\/deploy\/img\/Glowforge_PNG.png" : {
+      "ft" : 32768,
+      "iS" : 46179,
+      "oA" : 0,
+      "oAP" : "\/deploy\/img\/Glowforge_PNG.png",
       "oF" : 0,
       "oIPL" : 0,
       "opt" : 0,
@@ -259,6 +358,71 @@
       "plM" : 52780316221407,
       "prP" : 0
     },
+    "\/deploy\/img\/lioncarving.png" : {
+      "ft" : 32768,
+      "iS" : 108619,
+      "oA" : 0,
+      "oAP" : "\/deploy\/img\/lioncarving.png",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 0,
+      "oT" : 1,
+      "ou" : "lpckwebp-none",
+      "q" : 90,
+      "rq" : 75
+    },
+    "\/deploy\/img\/map-01.png" : {
+      "ft" : 32768,
+      "iS" : 223718,
+      "oA" : 0,
+      "oAP" : "\/deploy\/img\/map-01.png",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 0,
+      "oT" : 1,
+      "ou" : "lpckwebp-none",
+      "q" : 90,
+      "rq" : 75
+    },
+    "\/deploy\/img\/materialdiagram-desktop.png" : {
+      "ft" : 32768,
+      "iS" : 125221,
+      "oA" : 0,
+      "oAP" : "\/deploy\/img\/materialdiagram-desktop.png",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 0,
+      "oT" : 1,
+      "ou" : "lpckwebp-none",
+      "q" : 90,
+      "rq" : 75
+    },
+    "\/deploy\/img\/materialdiagram.png" : {
+      "ft" : 32768,
+      "iS" : 25035,
+      "oA" : 0,
+      "oAP" : "\/deploy\/img\/materialdiagram.png",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 0,
+      "oT" : 1,
+      "ou" : "lpckwebp-none",
+      "q" : 90,
+      "rq" : 75
+    },
+    "\/deploy\/img\/paypal.png" : {
+      "ft" : 32768,
+      "iS" : 2781,
+      "oA" : 0,
+      "oAP" : "\/deploy\/img\/paypal.png",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 0,
+      "oT" : 1,
+      "ou" : "lpckwebp-none",
+      "q" : 90,
+      "rq" : 75
+    },
     "\/deploy\/img\/PC.png" : {
       "ft" : 32768,
       "iS" : 15965,
@@ -291,6 +455,19 @@
       "opt" : 0,
       "plM" : 52780316221407,
       "prP" : 0
+    },
+    "\/deploy\/img\/STARS.png" : {
+      "ft" : 32768,
+      "iS" : 1206,
+      "oA" : 0,
+      "oAP" : "\/deploy\/img\/STARS.png",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 0,
+      "oT" : 1,
+      "ou" : "lpckwebp-none",
+      "q" : 90,
+      "rq" : 75
     },
     "\/deploy\/img\/Sun.svg" : {
       "ft" : 2097152,
@@ -333,6 +510,71 @@
       "iS" : 2814,
       "oA" : 0,
       "oAP" : "\/deploy\/img\/Times.png",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 0,
+      "oT" : 1,
+      "ou" : "lpckwebp-none",
+      "q" : 90,
+      "rq" : 75
+    },
+    "\/deploy\/img\/user01.png" : {
+      "ft" : 32768,
+      "iS" : 13935,
+      "oA" : 0,
+      "oAP" : "\/deploy\/img\/user01.png",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 0,
+      "oT" : 1,
+      "ou" : "lpckwebp-none",
+      "q" : 90,
+      "rq" : 75
+    },
+    "\/deploy\/img\/user02.png" : {
+      "ft" : 32768,
+      "iS" : 8875,
+      "oA" : 0,
+      "oAP" : "\/deploy\/img\/user02.png",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 0,
+      "oT" : 1,
+      "ou" : "lpckwebp-none",
+      "q" : 90,
+      "rq" : 75
+    },
+    "\/deploy\/img\/user03.png" : {
+      "ft" : 32768,
+      "iS" : 14152,
+      "oA" : 0,
+      "oAP" : "\/deploy\/img\/user03.png",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 0,
+      "oT" : 1,
+      "ou" : "lpckwebp-none",
+      "q" : 90,
+      "rq" : 75
+    },
+    "\/deploy\/img\/walletcarving.png" : {
+      "ft" : 32768,
+      "iS" : 113135,
+      "oA" : 0,
+      "oAP" : "\/deploy\/img\/walletcarving.png",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 0,
+      "oT" : 1,
+      "ou" : "lpckwebp-none",
+      "q" : 90,
+      "rq" : 75
+    },
+    "\/deploy\/img\/WARNINGSYMBOL.png" : {
+      "ft" : 32768,
+      "iS" : 1179,
+      "oA" : 0,
+      "oAP" : "\/deploy\/img\/WARNINGSYMBOL.png",
       "oF" : 0,
       "oIPL" : 0,
       "opt" : 0,
@@ -398,36 +640,116 @@
       "oF" : 0,
       "pg" : 0
     },
-    "\/dev\/global\/advertisements.kit" : {
+    "\/deploy\/payment_page.html" : {
       "cB" : 0,
-      "ft" : 2048,
+      "ft" : 8192,
       "hM" : 0,
-      "oA" : 1,
-      "oAP" : "\/dev\/global\/advertisements.html",
+      "oA" : 0,
+      "oAP" : "\/deploy\/payment_page.html",
       "oF" : 0
     },
-    "\/dev\/global\/awards.kit" : {
+    "\/deploy\/thank_you.html" : {
       "cB" : 0,
-      "ft" : 2048,
+      "ft" : 8192,
       "hM" : 0,
-      "oA" : 1,
-      "oAP" : "\/dev\/global\/awards.html",
+      "oA" : 0,
+      "oAP" : "\/deploy\/thank_you.html",
       "oF" : 0
     },
-    "\/dev\/global\/bottom.kit" : {
+    "\/dev\/checkout_page.kit" : {
+      "cB" : 0,
+      "ft" : 2048,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/deploy\/checkout_page.html",
+      "oF" : 2
+    },
+    "\/dev\/content\/checkout\/materialspecs.kit" : {
       "cB" : 0,
       "ft" : 2048,
       "hM" : 0,
       "oA" : 1,
-      "oAP" : "\/dev\/global\/bottom.html",
+      "oAP" : "\/dev\/content\/checkout\/materialspecs.html",
       "oF" : 0
     },
-    "\/dev\/global\/features.kit" : {
+    "\/dev\/content\/checkout\/payment.kit" : {
       "cB" : 0,
       "ft" : 2048,
       "hM" : 0,
       "oA" : 1,
-      "oAP" : "\/dev\/global\/features.html",
+      "oAP" : "\/dev\/content\/checkout\/payment.html",
+      "oF" : 0
+    },
+    "\/dev\/content\/checkout\/reviews02.kit" : {
+      "cB" : 0,
+      "ft" : 2048,
+      "hM" : 0,
+      "oA" : 1,
+      "oAP" : "\/dev\/content\/checkout\/reviews02.html",
+      "oF" : 0
+    },
+    "\/dev\/content\/payment_page\/payment.kit" : {
+      "cB" : 0,
+      "ft" : 2048,
+      "hM" : 0,
+      "oA" : 1,
+      "oAP" : "\/dev\/content\/payment_page\/payment.html",
+      "oF" : 0
+    },
+    "\/dev\/content\/Product_page\/advertisements.kit" : {
+      "cB" : 0,
+      "ft" : 2048,
+      "hM" : 0,
+      "oA" : 1,
+      "oAP" : "\/dev\/content\/Product_page\/advertisements.html",
+      "oF" : 0
+    },
+    "\/dev\/content\/Product_page\/awards.kit" : {
+      "cB" : 0,
+      "ft" : 2048,
+      "hM" : 0,
+      "oA" : 1,
+      "oAP" : "\/dev\/content\/Product_page\/awards.html",
+      "oF" : 0
+    },
+    "\/dev\/content\/Product_page\/bottom.kit" : {
+      "cB" : 0,
+      "ft" : 2048,
+      "hM" : 0,
+      "oA" : 1,
+      "oAP" : "\/dev\/content\/Product_page\/bottom.html",
+      "oF" : 0
+    },
+    "\/dev\/content\/Product_page\/features.kit" : {
+      "cB" : 0,
+      "ft" : 2048,
+      "hM" : 0,
+      "oA" : 1,
+      "oAP" : "\/dev\/content\/Product_page\/features.html",
+      "oF" : 0
+    },
+    "\/dev\/content\/Product_page\/hero.kit" : {
+      "cB" : 0,
+      "ft" : 2048,
+      "hM" : 0,
+      "oA" : 1,
+      "oAP" : "\/dev\/content\/Product_page\/hero.html",
+      "oF" : 0
+    },
+    "\/dev\/content\/Product_page\/reviews.kit" : {
+      "cB" : 0,
+      "ft" : 2048,
+      "hM" : 0,
+      "oA" : 1,
+      "oAP" : "\/dev\/content\/Product_page\/reviews.html",
+      "oF" : 0
+    },
+    "\/dev\/content\/thankyou\/thankyou.kit" : {
+      "cB" : 0,
+      "ft" : 2048,
+      "hM" : 0,
+      "oA" : 1,
+      "oAP" : "\/dev\/content\/thankyou\/thankyou.html",
       "oF" : 0
     },
     "\/dev\/global\/footer.kit" : {
@@ -462,22 +784,6 @@
       "oAP" : "\/dev\/global\/header.html",
       "oF" : 0
     },
-    "\/dev\/global\/hero.kit" : {
-      "cB" : 0,
-      "ft" : 2048,
-      "hM" : 0,
-      "oA" : 1,
-      "oAP" : "\/dev\/global\/hero.html",
-      "oF" : 0
-    },
-    "\/dev\/global\/reviews.kit" : {
-      "cB" : 0,
-      "ft" : 2048,
-      "hM" : 0,
-      "oA" : 1,
-      "oAP" : "\/dev\/global\/reviews.html",
-      "oF" : 0
-    },
     "\/dev\/global\/scripts.kit" : {
       "cB" : 0,
       "ft" : 2048,
@@ -504,6 +810,14 @@
       "oF" : 2,
       "sC" : 3,
       "tS" : 0
+    },
+    "\/dev\/payment_page.kit" : {
+      "cB" : 0,
+      "ft" : 2048,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/deploy\/payment_page.html",
+      "oF" : 2
     },
     "\/dev\/scss\/base\/_base.scss" : {
       "aP" : 0,
@@ -730,6 +1044,36 @@
       "pg" : 0,
       "sct" : 0
     },
+    "\/dev\/scss\/layout\/_materialspecs.scss" : {
+      "aP" : 0,
+      "bl" : 0,
+      "co" : 0,
+      "dP" : 10,
+      "ec" : 1,
+      "ft" : 4,
+      "ma" : 0,
+      "oA" : 1,
+      "oAP" : "\/dev\/scss\/layout\/_materialspecs.css",
+      "oF" : 0,
+      "oS" : 0,
+      "pg" : 0,
+      "sct" : 0
+    },
+    "\/dev\/scss\/layout\/_payment.scss" : {
+      "aP" : 0,
+      "bl" : 0,
+      "co" : 0,
+      "dP" : 10,
+      "ec" : 1,
+      "ft" : 4,
+      "ma" : 0,
+      "oA" : 1,
+      "oAP" : "\/dev\/scss\/layout\/_payment.css",
+      "oF" : 0,
+      "oS" : 0,
+      "pg" : 0,
+      "sct" : 0
+    },
     "\/dev\/scss\/layout\/_reviews.scss" : {
       "aP" : 0,
       "bl" : 0,
@@ -740,6 +1084,21 @@
       "ma" : 0,
       "oA" : 1,
       "oAP" : "\/dev\/scss\/layout\/_reviews.css",
+      "oF" : 0,
+      "oS" : 0,
+      "pg" : 0,
+      "sct" : 0
+    },
+    "\/dev\/scss\/layout\/_reviews02.scss" : {
+      "aP" : 0,
+      "bl" : 0,
+      "co" : 0,
+      "dP" : 10,
+      "ec" : 1,
+      "ft" : 4,
+      "ma" : 0,
+      "oA" : 1,
+      "oAP" : "\/dev\/scss\/layout\/_reviews02.css",
       "oF" : 0,
       "oS" : 0,
       "pg" : 0,
@@ -759,6 +1118,14 @@
       "oS" : 0,
       "pg" : 0,
       "sct" : 0
+    },
+    "\/dev\/thank_you.kit" : {
+      "cB" : 0,
+      "ft" : 2048,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/deploy\/thank_you.html",
+      "oF" : 2
     }
   },
   "hooks" : [

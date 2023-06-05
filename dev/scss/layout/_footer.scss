@@ -1,53 +1,65 @@
-footer{
+footer {
     display: grid;
     grid-template-columns: 1fr;
     background-color: black;
-    grid-template-areas: 
-    "first"
-    "second"
-    "third";
-    
-  
-    #first{    
+    grid-template-areas:
+        "first"
+        "second"
+        "third";
+
+    @include lg {
+            grid-template-columns: 1fr 1fr 1fr;
+            grid-template-areas:
+                "first second third";
+        }
+    }
+
+    #first {
         grid-area: first;
-        ul{
+
+        ul {
             list-style: none;
-            
-           button{
-            color: white;
-        } 
-        }
-     
-    } 
-    #second{
-        ul{
-            list-style: none;
-            color: white;
-        }
-         h5{
-                color: white;
-            }   
-        } 
-        #third{
-            grid-area: third;
-            h4{
+
+            a {
+                border-radius: none;
                 color: white;
             }
-            ul{
+        }
+
+    }
+
+    #second {
+        grid-area: second;
+
+        ul {
             list-style: none;
+            color: white;
+        }
+
+        h5 {
+            color: white;
+        }
+    }
+
+    #third {
+        grid-area: third;
+
+        h4 {
+            color: white;
+        }
+
+        ul {
+            list-style: none;
+            flex-direction: row;
             align-items: row;
             align-items: center;
             justify-content: center;
             justify-content: space-evenly;
-                
-            h5{
-                   color: white;
-               }   
-           }  
-            @include lg{
-        grid-template-columns: 1fr 1fr 1fr;
-        grid-template-areas: 
-        "first second third";
-    }
-           }
+
+            h5 {
+                color: white;
+            }
         }
+
+       
+}

@@ -1,0 +1,99 @@
+#work {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-areas:
+        "dimension"
+        "work"
+        "images"
+        "materials"
+        "warning"
+        "software"
+        "camera"
+        "imageseries";
+
+    #dimensionn {
+        grid-area: dimension;
+
+        h2 {
+            color: black;
+        }
+
+        p {
+            color: black;
+        }
+    }
+
+    #workkkk {
+        grid-area: work;
+
+        h2 {
+            color: black;
+        }
+
+        p {
+            color: black;
+        }
+    }
+
+    #imageprint {
+        grid-area: images;
+    }
+
+    #materials {
+        grid-area: materials;
+
+        h2 {
+            color: black;
+        }
+
+        p {
+            color: black;
+        }
+    }
+
+    #warning {
+        grid-area: warning;
+        background-color: #4791A2;
+        color: white;
+    }
+
+    #SOFTWARE {
+        grid-area: software;
+
+        h2 {
+            color: black;
+        }
+
+        p {
+            color: black;
+        }
+    }
+
+    #Camera {
+        grid-area: camera;
+
+        h2 {
+            color: black;
+        }
+
+        p {
+            color: black;
+        }
+    }
+
+    #imageseries {
+        grid-area: imageseries;
+    }
+
+    @include lg {
+        display: flex;
+        grid-template-columns: 1fr 1fr;
+        grid-template-areas:
+            "dimension images"
+            "work images"
+            "materials imageseries"
+            "warning warning"
+            "software camera";
+    }
+
+}

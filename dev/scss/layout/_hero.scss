@@ -8,7 +8,9 @@
     h1 {
         font-size: 40px;
         position: absolute;
-        top: 35%;
+        top: 25%;
+        left:0;
+        right:0;
         z-index: 0;
         text-align: center;
     }
@@ -16,7 +18,9 @@
     h3 {
         font-size: 13px;
         position: absolute;
-        top: 45%;
+        top: 31%;
+        left: 0;
+        right: 0;
         z-index: 2;
         text-align: center;
     }
@@ -29,7 +33,7 @@
         h1 {
             font-size: 200px;
             position: absolute;
-            top: 40%;
+            top: 35%;
             z-index: 0;
             text-align: center;
         }
@@ -37,7 +41,7 @@
         h3 {
             font-size: 64px;
             position: absolute;
-            top: 70%;
+            top: 65%;
             z-index: 2;
             text-align: center;
         }
