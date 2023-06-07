@@ -1,0 +1,43 @@
+#thankyou{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-areas:
+    "start"
+    "tutorial"
+    "map";
+    #start{
+        grid-area: start;
+h5{
+        text-align: center;
+    }
+    h1{
+        text-align: center;
+    }
+    }
+    
+    #woo{
+        grid-area: tutorial;
+       img{
+        text-align: center;
+    }
+    h3{
+        text-align: center;
+    } 
+    }
+    #materials{
+        grid-area: map;
+        img{
+         text-align: center;
+     }
+     h3{
+         text-align: center;
+     } 
+     }
+     @include lg{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-areas: 
+        "start start"
+        "tutorial map";
+     }
+}

@@ -761,13 +761,13 @@ footer {
 #work #imageprint {
   grid-area: images;
 }
-#work #materials {
+#work #materialss {
   grid-area: materials;
 }
-#work #materials h2 {
+#work #materialss h2 {
   color: black;
 }
-#work #materials p {
+#work #materialss p {
   color: black;
 }
 #work #warning {
@@ -798,7 +798,7 @@ footer {
 }
 @media (min-width: 1024px) {
   #work {
-    display: flex;
+    display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-areas: "dimension images" "work images" "materials imageseries" "warning warning" "software camera";
   }
@@ -819,10 +819,9 @@ footer {
 }
 #reviews02 #users {
   grid-area: userreviews;
-  display: flex;
-  flex-direction: row;
   background-color: black;
   background-size: contain;
+  text-align: center;
   margin-left: 16px;
   margin-right: 16px;
   width: 358px;
@@ -832,13 +831,11 @@ footer {
   border-color: white;
 }
 #reviews02 #users #content h4 {
-  flex-direction: row;
   text-align: left;
   color: white;
   font-size: 12px;
 }
 #reviews02 #users #content p {
-  flex-direction: row;
   font-size: 7px;
   text-align: left;
   color: white;

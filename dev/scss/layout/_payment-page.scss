@@ -1,0 +1,22 @@
+#payment{
+    display: flex;
+
+    #top{
+        flex-direction: row;
+    }
+
+    #paymentoptions{
+        flex-direction: row;
+    }
+
+    #forms{
+        form{
+             input{
+            width: 100%;
+            border: none;
+            border-bottom: 2px;
+        }
+        }
+       
+    }
+}

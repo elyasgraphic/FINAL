@@ -15,10 +15,9 @@
     }
     #users{
         grid-area: userreviews;
-        display: flex;
-        flex-direction: row;
         background-color: black;
         background-size: contain;
+        text-align: center;
         margin-left: 16px;
         margin-right: 16px;
         width: 358px;
@@ -26,13 +25,11 @@
         #content{
             border-color: white;
              h4{
-                flex-direction: row;
             text-align: left;
             color: white;
             font-size: 12px;
         }
         p{
-            flex-direction: row;
             font-size: 7px;
             text-align: left;
             color: white;

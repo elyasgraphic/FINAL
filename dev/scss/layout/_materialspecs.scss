@@ -39,7 +39,7 @@
         grid-area: images;
     }
 
-    #materials {
+    #materialss {
         grid-area: materials;
 
         h2 {
@@ -83,10 +83,11 @@
 
     #imageseries {
         grid-area: imageseries;
+        
     }
 
     @include lg {
-        display: flex;
+        display: grid;
         grid-template-columns: 1fr 1fr;
         grid-template-areas:
             "dimension images"

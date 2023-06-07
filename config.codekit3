@@ -688,12 +688,12 @@
       "oAP" : "\/dev\/content\/checkout\/reviews02.html",
       "oF" : 0
     },
-    "\/dev\/content\/payment_page\/payment.kit" : {
+    "\/dev\/content\/payment_page\/payment-page.kit" : {
       "cB" : 0,
       "ft" : 2048,
       "hM" : 0,
       "oA" : 1,
-      "oAP" : "\/dev\/content\/payment_page\/payment.html",
+      "oAP" : "\/dev\/content\/payment_page\/payment-page.html",
       "oF" : 0
     },
     "\/dev\/content\/Product_page\/advertisements.kit" : {
@@ -1059,6 +1059,21 @@
       "pg" : 0,
       "sct" : 0
     },
+    "\/dev\/scss\/layout\/_payment-page.scss" : {
+      "aP" : 0,
+      "bl" : 0,
+      "co" : 0,
+      "dP" : 10,
+      "ec" : 1,
+      "ft" : 4,
+      "ma" : 0,
+      "oA" : 1,
+      "oAP" : "\/dev\/scss\/layout\/_payment-page.css",
+      "oF" : 0,
+      "oS" : 0,
+      "pg" : 0,
+      "sct" : 0
+    },
     "\/dev\/scss\/layout\/_payment.scss" : {
       "aP" : 0,
       "bl" : 0,
@@ -1099,6 +1114,21 @@
       "ma" : 0,
       "oA" : 1,
       "oAP" : "\/dev\/scss\/layout\/_reviews02.css",
+      "oF" : 0,
+      "oS" : 0,
+      "pg" : 0,
+      "sct" : 0
+    },
+    "\/dev\/scss\/layout\/_thankyou.scss" : {
+      "aP" : 0,
+      "bl" : 0,
+      "co" : 0,
+      "dP" : 10,
+      "ec" : 1,
+      "ft" : 4,
+      "ma" : 0,
+      "oA" : 1,
+      "oAP" : "\/dev\/scss\/layout\/_thankyou.css",
       "oF" : 0,
       "oS" : 0,
       "pg" : 0,
