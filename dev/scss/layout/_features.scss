@@ -7,9 +7,10 @@
     grid-template-areas: 
     "title"
     "cooling"
-    "refine"
+    "refined"
     "faster";
-
+    margin-bottom: 144px ;
+    
     @include lg{
         grid-template-columns: 1fr 1fr 1fr;
         justify-content: space-evenly;

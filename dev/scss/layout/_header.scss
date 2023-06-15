@@ -1,30 +1,63 @@
 #header{
   display: grid;
   background-color: black;
-    #burgercontainer{
-        
 
-    }
-   #headernotes{
-        list-style: none;
-        display:flex;
-        flex-direction: row;
-        align-items: center;
-        justify-content: center;
-        justify-content: space-evenly;
-        border-radius: none;
-        
-        a{
-            border-radius: none;
-            color: white;
-
-            h4{
-                text-underline-position: under;
-            }
-            img{
-                border-radius: none;
-            }
-        }
-    }
-
+ #burgerbutton{
+    cursor: pointer;
+    padding: 0;
 }
+  #burgercontainer{
+    background-color: black;
+  }
+
+  #burger {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 24px;
+    height: 20px;
+    cursor: pointer;
+    }
+
+    #burger div {
+    width: 100%;
+    height: 3px;
+    background-color: #000;
+    }
+    #burger div a{
+    color: white;
+    }
+
+   #headernotes{
+    display: none;
+   }
+
+   @include lg{
+    #burgerbutton{
+        display: none;
+    }
+    #burgercontainer{
+        display: none;
+    }
+    #burger{
+        display: none;
+    }
+
+    #headernotes{
+            display: block;
+            
+       }
+       #headernotes ul{
+        display:flex;
+        justify-content: space-between;
+        justify-content: space-evenly;
+        list-style: none;
+        flex-direction: row;
+       }
+       #headernotes h4{
+        color: white;
+        text-decoration: underline;
+       }
+   }
+
+    }

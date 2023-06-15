@@ -1,44 +1,84 @@
-#thankyou{
+#thankyou {
     display: grid;
     grid-template-columns: 1fr;
     grid-template-areas:
-    "start"
-    "tutorial"
-    "map";
-    
-    #start{
+        "start"
+        "tutorial"
+        "map";
+    margin-bottom: 240px;
+  #start {
         grid-area: start;
-h5{
         text-align: center;
+
+     h5 {
+            font-size: 13px;
+        }
+
+     h1 {
+            font-size: 32px;
+        }
     }
-    h1{
-        text-align: center;
-    }
-    }
-    
-    #woo{
+
+    #woo {
         grid-area: tutorial;
-       img{
         text-align: center;
+        padding-bottom: 113px;
+       img {
+            text-align: center;
+            width: 73%;
+        }
+
+       h3 {
+            text-align: center;
+        }
     }
-    h3{
-        text-align: center;
-    } 
-    }
-    #materials{
+
+   #materials {
         grid-area: map;
+        text-align: center;
+
         img{
-         text-align: center;
-     }
-     h3{
-         text-align: center;
-     } 
-     }
-     @include lg{
+            width: 68%;
+            text-align: center;
+        }
+    }
+
+    @include lg {
         display: grid;
         grid-template-columns: 1fr 1fr;
-        grid-template-areas: 
-        "start start"
-        "tutorial map";
-     }
+        grid-template-areas:
+            "start start"
+            "tutorial map";
+        margin-bottom: 175px;
+            #start{
+                h5{
+                    font-size: 32px;
+                    padding-bottom: -30px;
+                    
+                }
+                h1{
+                    font-size: 64px;
+                    letter-spacing: 121%;
+                }
+            }
+            #woo{
+                margin-left: 352px;
+                h3{
+                    font-size: 32px ;
+                    text-decoration: underline;
+                }
+                
+            }
+            #materials{
+                margin-right: 272px;
+                img{
+                    width: 63%;
+                }
+                h3{
+                    font-size: 32px;
+                text-decoration: underline;
+                }
+                
+            }
+    }
 }

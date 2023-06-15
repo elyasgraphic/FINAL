@@ -4,63 +4,129 @@
     grid-template-areas:
         "picture"
         "information"
-        "airpicture"
-        "airfilter";
+        "button"
+        "para"
+        "airpicture";
 
-    #pocture {
+    #picture {
         grid-area: picture;
+        display: flex;
+        justify-content: center;
+        align-items: center;
     }
-
+    
     #info {
         grid-area: information;
+        margin-bottom: 100px;
+        text-align: center;
+    }
 
-        h3 {
-            font-size: 32px;
-            color: black
-        }
-         h5 {
-            font-size: 15px;
-            color: black;
-        }
-        img{
+    #info h3 {
+        text-align: center;
+        font-size: 32px;
+        color: black
+    }
 
-        }
-        #buttons {
-            font-size: 20px;
-            color: white;
-            background-color: #5AB5CB;
-            background-size: auto;
-        }
-        p {
-            font-size: 16px;
-            color: black;
-        }
+    #info h5 {
+        text-align: center;
+        font-size: 15px;
+        color: black;
+    }
+
+
+    #button {
+        grid-area: button;
+        display: flex;
+     align-items: center;
+     justify-content: center;
+        text-align: center;
+        background-color: #5AB5CB;
+        margin-left: 92px;
+        margin-right: 92px;
+        padding-top: -50px;
+        padding-bottom: -50px;
+        padding-left: 50px;
+        padding-right: 150px;
+    }
+
+    #button a {
+        font-size: 20px;
+        color: white;
+        display: flex;
+        align-items: center;
+        text-decoration: none;
+    }
+    #button img{
+        padding-top: 18px;
+        padding-right: 16px ;
+    }
+    #button h3{
+        text-align: center;
+        color: white;
+        text-shadow: 1px solid black;
+    }
+
+    #paragraph {
+        grid-area: para;
+    }
+
+    #paragraph p {
+        text-align: center;
+        font-size: 16px;
+        color: black;
     }
 
     #airpicture {
         grid-area: airpicture;
         width: 100%;
     }
-
-    #airfilter {
-        grid-area: airfilter;
-
-        h3 {
-            font-size: 32px;
-            color: black;
-        }
-
-        p {
-            font-size: 10px;
-            color: black;
-        }
+    #airpicture img{
+        float: left;
+        width: 50%;
+    }
+    #airpicture h3{
+        text-align: left;
+    }
+    #airpicture h4{
+        text-align: left;
+    }
+    #airpicture p {
+        font-size: 10px;
+        color: black;
     }
 
     @include lg {
         grid-template-columns: 1fr 1fr;
         grid-template-areas:
             "picture information"
-            "airpicture airfilter";
-            
-        }
+            "picture button"
+            "picture para"
+            "airpicture airpicture"
+            "airfilter airfilter";
+
     }
+    #picture{
+        width: 100%;
+    }
+    #info h3{
+        font-size: 48px ;
+    }
+    #info h5{
+        font-size: 20px ;
+    }
+    #button h3{
+        font-size: 48px;
+    }
+    #paragraph{
+        font-size: 16px;
+    }
+    #airpicture h3{
+        font-size: 56px;
+    }
+    #airpicture h4{
+        font-size: 48px;
+    }
+    #airpicture p{
+        font-size: 20px;
+    }
+}

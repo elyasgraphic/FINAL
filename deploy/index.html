@@ -18,46 +18,51 @@
     
     <section id="header">
         <section id="burgercontainer">
-            <div id="burger">
-    
-            <div></div>
-            <div></div>
-            <div></div>
-            
-        </div>
+          <button id="burgerbutton">
+            <img src="img/BurgerMenu.png" alt="burgers">
+          </button>
+          <div id="burger">
+            <div><a href="deploy/checkout_page.html">Products</a></div>
+            <div><a href="Newsletter">Newsletter</a></div>
+            <div><a href="About">About</a></div>
+            <div><a href="Contact">Contact</a></div>
+            <div><a href="Submit" type="submit"><img src="img/Search.svg"></a></div>
+            <div><a href="Account"><img src="img/Account.svg" alt="a"></a></div>
+            <div><a href="Cart"><img src="img/Cart.svg" alt="p"></a></div>
+          </div>
         </section>
-        
-            <ul id="headernotes">
-                <li>
-                    <a href="deploy/checkout_page.html"> <h4>Products </h4> </a>
-                </li>
-                <li>
-                    <button> <h4>Newsletter </h4></button>
-                </li>
-                <li>
-                    <button> <h4>About </h4> </button>
-                </li>
-                <li>
-                    <button> <h4>Contact </h4></button>
-                </li>
-                <li>
-                    <img src="img/Glowforge-Logo.png" alt="glowforge">
-                </li>
-                <li>
-                    <button type="submit"><img src="img/Search.svg"></button>
-                    <form action="#" id="search">
-                        <input type="text" placeholder="search" name="q">
-                    </form>
-                </li>
-                <li>
-                    <button><img src="img/Cart.svg" alt="p"></button>
-                </li>
-                <li>
-                   <button><img src="img/Account.svg" alt="a"></button> 
-                </li>
-            </ul>
-    
-    </section>
+        <section id="headernotes">
+          <ul>
+            <li>
+              <a href="deploy/checkout_page.html"><h4>Products</h4></a>
+            </li>
+            <li>
+              <a href="Newsletter"><h4>Newsletter</h4></a>
+            </li>
+            <li>
+              <a href="About"><h4>About</h4></a>
+            </li>
+            <li>
+              <a href="Contact"><h4>Contact</h4></a>
+            </li>
+            <li>
+              <a href="deploy/index.html"><img src="img/Glowforge-Logo.png" alt="glowforge"></a>
+            </li>
+            <li>
+              <form action="#" id="search">
+                <input type="text" placeholder="search" name="q">
+                <a href="Submit" type="submit"><img src="img/Search.svg"></a>
+              </form>
+            </li>
+            <li>
+              <a href="Cart"><img src="img/Cart.svg" alt="p"></a>
+            </li>
+            <li>
+              <a href="Account"><img src="img/Account.svg" alt="a"></a>
+            </li>
+          </ul>
+        </section>
+      </section>
     <section id="hero">
             <div>
                 <img src="img/HERO.png" alt="hero">
@@ -145,6 +150,7 @@
                     </ul>
                 </section>
     <section id="reviews">
+                        <section id="star">
                         <ul>
                             <li>
                                 <h3>“It's rare to find a machine with such
@@ -159,49 +165,86 @@
                                 <p>TechRadar Pro</p>
                             </li>
                         </ul>
+                        </section>
+                        
+                        <section id="box01">
+                            <ul>
+                                <li>
+                                    <h4>“The Glowforge Pro is easy to use and let you create some nicely intricate coasters, ornaments, plaques, and other decorations. It's a remarkable laser cutter for its size and price” </h4>
+                                </li>
+                                <li>
+                                    <p>PC MAGAZINE </p> 
+                                </li>
+                            </ul>
+                        </section>
+                        <section id="box02">
+                            <ul>
+                                <li>
+                                    <h4>“If you're aiming to be the next millionaire on Etsy, you might want to order one of these now.”</h4>
+                                </li>
+                                <li>
+                                    <p>Engadget</p>
+                                </li>
+                            </ul>
+                        </section>
                     </section>
     <section id="advertisements">
+                            <section id="features">
+                                <img src="img/FEATURES + ICONS.png" alt="icon">
+                            </section>
                             <section id="hundredmaterials">
                                 <picture>
                                     <source media="(min-width: 1440px )" srcset="img/HundredMaterials-DESKTOP.png">
                                     <source media="(max-width: 1439px)" srcset="img/Hundred-Materials-Mobile.png">
                                     <img src="img/HundredMaterials-DESKTOP.png" alt="basicimage">
                                 </picture>
-                            <h1>
-                                WORK WITH HUNDREDS OF MATERIALS
-                            </h1>
-                            
-                        </section>
-                        <section id="awardwinning">
-                            <img src="img/AWARD WINNING MAN.png" alt="guy">
-                           <h1>
-                            AWARD WINNING TEAM
-                            </h1> 
-                            <a href="LearnMore"> <h3>Learn More </h3> </a>
-                        </section>
-                        <section id="Backers">
-                            <h2> BACKERS </h2>
                             </section>
-                        <ul id="backer">
-                            <li>
-                                <img src="img/TechRadar.png" alt="tr">
-                            </li>
-                            <li>
-                                <img src="img/CREATIVEBLOQ.png" alt="cb">
-                            </li>
-                            <li>
-                                <img src="img/JUST CREATIVE.png" alt="jc">
-                            </li>
-                            <li>
-                                <source media="(min-width: 1440px)" srcset="img/butterfly.png">
-                            </li>
-                            <li>
-                                <source media="(min-width: 1440px)" srcset="img/heronrock.png">
-                            </li>
-                            <li>
-                                <source media="(min-width: 1440px)" srcset="img/we.png">
-                            </li>
-                        </ul>
+                            <section id="text">
+                                <h1> WORK WITH HUNDREDS OF MATERIALS </h1>
+                                <a href="LearnMore">
+                                    <h3>Learn More </h3>
+                                </a>
+                            </section>
+                        
+                            <section id="awardwinning">
+                                <img src="img/AWARD WINNING MAN.png" alt="guy">
+                            </section>
+                            <section id="awardtxt">
+                                <h1>
+                                    AWARD WINNING <br> TEAM
+                                </h1>
+                                <a href="LearnMore">
+                                    <h3>Learn More </h3>
+                                </a>
+                            </section>
+                            <section id="Backers">
+                                <h2> BACKERS </h2>
+                            </section>
+                            <section id="backer">
+                                <ul>
+                                    <li>
+                                        <img src="img/TechRadar.png" alt="tr">
+                                    </li>
+                                    <li>
+                                        <img src="img/CREATIVEBLOQ.png" alt="cb">
+                                    </li>
+                                    <li>
+                                        <img src="img/JUST CREATIVE.png" alt="jc">
+                                    </li>
+                                    <li>
+                                        <img src="img/butterfly.png" alt="bf" id="bf">
+                                    </li>
+                                    <li>
+                                        <img src="img/heronrock.png" alt="hr" id="hr">
+                                    </li>
+                                    <li>
+                                        <img src="img/we.png" alt="we" id="we">
+                                    </li>
+                                </ul>
+                            </section>
+                        
+                        
+                        
                         </section>
                         
     <section id="bottom">
@@ -211,9 +254,11 @@
                                     <source media="(min-width: 1440px )" srcset="img/GLOWFORGE-END.png">
                                     <img src="img/GLOWORGE-END.png" alt="basicimage">
                                 </picture>
+                            <section id="future">
+                                <h1> MAKE THE FUTURE</h1>
+                            <a href="LrnMore"><h3>LEARN MORE </h3></a>
+                            </section>
                             
-                            <h2> MAKE THE FUTURE</h2>
-                            <a href="LrnMore">LEARN MORE</a>
                             </section>
     <footer>
                                     <section id="first">

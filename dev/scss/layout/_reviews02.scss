@@ -1,55 +1,165 @@
-#reviews02{
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-areas:
-    "title"
-    "userreviews"
-    "bottombutton" ;
-    margin-bottom: 78px;
-    h2{
-        grid-area: title;
-        color: black;
-        text-align: center;
-        margin-bottom: 24px;
-        margin-top: 93px ;
+#reviews02 {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-areas:
+    "title title"
+    "userimg01 user01info"
+    "userimg02 user02info"
+    "userimg03 user03info"
+    "seem seem";
+  margin-bottom: 78px;
+  
+#title {
+  grid-area: title;
+  text-align: center;
+  margin-bottom: 24px;
+  margin-top: 93px;
+}
+
+#title h2 {
+  color: black;
+}
+
+#all {
+  background-color: black;
+  border-radius: 25px;
+  padding-top: 105px;
+  padding-bottom: 105px;
+  padding-left: 43px;
+  padding-right: 43px;
+}
+#user01all{
+  display: flex;
+  border: 6px solid white;
+  border-radius: 25px;
+  margin-top: 70px;
+}
+
+#user01 {
+  display: flex;
+  grid-area: userimg01;
+  text-align: left;
+  padding-right: 30px;
+}
+
+#user01 img {
+  width: 100%;
+}
+
+#user01info {
+  grid-area: user01info;
+}
+
+#user01info h4 {
+  color: white;
+  text-align: left;
+  font-size: 12px;
+}
+
+#user01info p {
+  text-align: left;
+  color: white;
+  font-size: 7px;
+}
+#user02all{
+  display: flex;
+  border: 6px solid white;
+  border-radius: 25px;
+  margin-top: 70px;
+}
+
+#user02 {
+  display: flex;
+  text-align: left;
+  grid-area: userimg02;
+  padding-right: 30px;
+}
+
+#user02 img {
+  width: 100%;
+}
+
+#user02info {
+  grid-area: user02info;
+}
+
+#user02info h4 {
+  color: white;
+  text-align: left;
+  font-size: 12px;
+}
+
+#user02info p {
+  text-align: left;
+  color: white;
+  font-size: 7px;
+}
+
+#user03all{
+  display: flex;
+  border: 6px solid white;
+  border-radius: 25px;
+  margin-top: 70px;
+}
+
+#user03 {
+  display: flex;
+  grid-area: userimg03;
+  padding-right: 30px;
+}
+
+#user03 img {
+  width: 100%;
+}
+
+#user03info {
+  grid-area: user03info;
+}
+
+#user03info h4 {
+  color: white;
+  text-align: left;
+  font-size: 12px;
+}
+
+#user03info p {
+  color: white;
+  text-align: left;
+  font-size: 7px;
+}
+
+#seem {
+  grid-area: seem;
+  text-align: center;
+}
+
+#seem h5 {
+  color: black;
+  text-align: center;
+}
+
+#seem a {
+  color: black;
+}
+@include lg{
+
+    #user01info h4{
+        font-size:32px ;
     }
-    #users{
-        grid-area: userreviews;
-        background-color: black;
-        background-size: contain;
-        text-align: center;
-        margin-left: 16px;
-        margin-right: 16px;
-        width: 358px;
-        height: 251px;
-        #content{
-            border-color: white;
-             h4{
-            text-align: left;
-            color: white;
-            font-size: 12px;
-        }
-        p{
-            font-size: 7px;
-            text-align: left;
-            color: white;
-        }
-        img{
-            width: 25%;
-        }
+    #user01info p{
+        font-size: 16px ;
     }
-    a{
-        grid-area: bottombutton;
-        color: black;
-        text-align: center;
+    #user02info h4{
+        font-size: 32px;
     }
-        }
-       
-    @include lg{
-        grid-template-columns: 1fr;
-        grid-template-areas: 
-        "title"
-        "userreviews"
-        "bottombutton";
+    #user02info p{
+        font-size: 16px ;
     }
+    #user03info h4{
+        font-size: 32px;
+    }
+    #user03info p{
+        font-size: 16px ;
+    }
+}
 }

@@ -1,57 +1,157 @@
-#advertisements{
+#advertisements {
     display: grid;
     grid-template-columns: 1fr;
-    
-    @include lg{
-        h1{
-            text-align: center;
-        }
-        ul{
-            list-style: none;
-            display:flex;
-            flex-direction: row;
-            align-items: center;
-            justify-content: center;
-            justify-content: space-evenly;
-        }
-    }
-   #hundredmaterials{
-    h1{
-    text-align: right;
-    font-size: 40px;
-    position: absolute;
+    grid-template-areas: 
+      "icons"
+      "hund"
+      "txt"
+      "award"
+      "awardtxt"
+      "back"
+      "backs";
+  
+      #features{
+        grid-area: icons;
+        display: none;
+        margin-bottom: 110px;
+      }
+  #hundredmaterials {
+    grid-area: hund;
+  }
+  
+  #hundredmaterials img {
+    width: 100%;
+    position: relative;
+    z-index: 0;
+  }
+  
+  #text {
+    grid-area: txt;
     z-index: 1;
-    right: 0;
-    top: 670;
-    }
-    img{
-        width: 100%;
-        position: relative;
-        z-index: 0;
-    }
-}
-#awardwinning{
-    h1{
-        display: flex;
-        flex-direction: row;
-    }
-    img{
-        width: 50%;
-    }
-}
-#Backers{
-    h2{
+  }
+  
+  #text h1 {
+    text-align: right;
+    margin-top: -150px;
+    font-size: 64px;
+  }
+  
+  #text a {
+    text-align: right;
+    margin-top: -130px;
+    font-size: 13px;
+  }
+  
+  #awardwinning {
+    grid-area: award;
+  }
+  
+  #awardwinning img {
+    width: 50%;
+  }
+  
+  #awardtxt {
+    grid-area: awardtxt;
+  }
+  
+  #awardtxt h1 {
+    font-size: 40px;
+    z-index: 1;
+    margin-top: -90px;
+    color: white;
+    text-shadow: 1px 1px #000;
+  }
+  
+  #awardtxt a {
+    color: white;
+    margin-top: -80px;
+    margin-left: 30px;
+  }
+  
+  #Backers {
+    grid-area: back;
+  }
+  
+  #Backers h2 {
+    text-align: center;
+  }
+  
+  #backer {
+    grid-area: backs;
+  }
+  
+  #backer ul {
+    display: flex;
+    list-style: none;
+    justify-content: space-between;
+    justify-content: space-evenly;
+  }
+
+  #backer ul li{
+    flex: 0;
+  }
+  
+  #backer ul li:nth-child(-n+3) img{
+    display: none;
+  }
+  
+  @include lg {
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas:
+      "icons icons"
+      "hund hund"
+      "txt txt"
+      "award awardtxt"
+      "back back"
+      "backs backs";
+  
+      #features{
+        display: block;
         text-align: center;
+      }
+
+    #awardwinning {
+      width: 100%;
     }
-}
+    #text{
+      margin-bottom: 180px ;
+    }
+
+    #text h1 {
+      text-align: center;
+      font-size: 64px;
+    }
+    #text a{
+        text-align: center;
+        font-size: 32px;
+    }
+    #backer ul {
+      justify-content: center;
+      justify-content: space-evenly;
+    }
+
+    
+    #backer ul li{
+        display: flex;
+    }
+    #backer ul li:nth-child(-n+3) img{
+        display: block;
+      }
+  #awardtxt{
+    margin-bottom: 130px;
+  }
+    #awardtxt h1 {
+        text-align: left;
+      font-size: 110px;
+      color: black;
+      margin-top: 10px;
+    }
+    #awardtxt a{
+        font-size: 32px;
+        margin-top: -200px;
+    }
     #backer{
-            list-style: none;
-            justify-content: space-between;
-            justify-content: space-evenly;
+      margin-bottom: 180px;
     }
-
-    img{
-        width: 75%;
-    }
-
+  }
 }

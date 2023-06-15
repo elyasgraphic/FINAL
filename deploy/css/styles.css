@@ -381,24 +381,56 @@ textarea {
   display: grid;
   background-color: black;
 }
-#header #headernotes {
-  list-style: none;
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: center;
-  justify-content: space-evenly;
-  border-radius: none;
+#header #burgerbutton {
+  cursor: pointer;
+  padding: 0;
 }
-#header #headernotes a {
-  border-radius: none;
+#header #burgercontainer {
+  background-color: black;
+}
+#header #burger {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 24px;
+  height: 20px;
+  cursor: pointer;
+}
+#header #burger div {
+  width: 100%;
+  height: 3px;
+  background-color: #000;
+}
+#header #burger div a {
   color: white;
 }
-#header #headernotes a h4 {
-  text-underline-position: under;
+#header #headernotes {
+  display: none;
 }
-#header #headernotes a img {
-  border-radius: none;
+@media (min-width: 1024px) {
+  #header #burgerbutton {
+    display: none;
+  }
+  #header #burgercontainer {
+    display: none;
+  }
+  #header #burger {
+    display: none;
+  }
+  #header #headernotes {
+    display: block;
+  }
+  #header #headernotes ul {
+    display: flex;
+    justify-content: space-between;
+    justify-content: space-evenly;
+    list-style: none;
+    flex-direction: row;
+  }
+  #header #headernotes h4 {
+    color: white;
+    text-decoration: underline;
+  }
 }
 
 #hero img {
@@ -519,7 +551,8 @@ footer {
   grid-gap: 64px;
   margin-left: 100px;
   margin-right: 100px;
-  grid-template-areas: "title" "cooling" "refine" "faster";
+  grid-template-areas: "title" "cooling" "refined" "faster";
+  margin-bottom: 144px;
 }
 @media (min-width: 1024px) {
   #features {
@@ -595,59 +628,207 @@ footer {
   display: block;
 }
 
-#reviews ul {
+#reviews {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-areas: "stars";
+}
+#reviews #star {
+  grid-area: stars;
+}
+#reviews #star ul {
   list-style: none;
   justify-content: center;
   text-align: center;
+  margin-bottom: 145px;
+}
+#reviews #box01 {
+  grid-area: box01;
+  display: none;
+}
+#reviews #box02 {
+  grid-area: box02;
+  display: none;
+}
+@media (min-width: 1024px) {
+  #reviews {
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-areas: "stars box01 box02";
+    margin-bottom: 175px;
+  }
+  #reviews #star {
+    margin-left: 110px;
+    margin-bottom: 165px;
+  }
+  #reviews #star h3 {
+    font-size: 64px;
+    text-align: left;
+  }
+  #reviews #star img {
+    text-align: left;
+  }
+  #reviews #star p {
+    text-align: left;
+  }
+  #reviews #box01 {
+    display: block;
+    background-color: black;
+    margin-right: 50px;
+    margin-bottom: 365px;
+  }
+  #reviews #box01 h4 {
+    font-size: 32px;
+    color: white;
+    line-height: 46px;
+  }
+  #reviews #box01 p {
+    padding-top: 100px;
+    font-size: 16px;
+    text-align: right;
+    color: white;
+  }
+  #reviews #box02 {
+    display: block;
+    background-color: black;
+    margin-right: 86px;
+    margin-bottom: 365px;
+  }
+  #reviews #box02 h4 {
+    font-size: 32px;
+    color: white;
+    line-height: 46px;
+  }
+  #reviews #box02 p {
+    padding-top: 100px;
+    font-size: 16px;
+    text-align: right;
+    color: white;
+  }
 }
 
 #advertisements {
   display: grid;
   grid-template-columns: 1fr;
+  grid-template-areas: "icons" "hund" "txt" "award" "awardtxt" "back" "backs";
 }
-@media (min-width: 1024px) {
-  #advertisements h1 {
-    text-align: center;
-  }
-  #advertisements ul {
-    list-style: none;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
-    justify-content: space-evenly;
-  }
+#advertisements #features {
+  grid-area: icons;
+  display: none;
+  margin-bottom: 110px;
 }
-#advertisements #hundredmaterials h1 {
-  text-align: right;
-  font-size: 40px;
-  position: absolute;
-  z-index: 1;
-  right: 0;
-  top: 670;
+#advertisements #hundredmaterials {
+  grid-area: hund;
 }
 #advertisements #hundredmaterials img {
   width: 100%;
   position: relative;
   z-index: 0;
 }
-#advertisements #awardwinning h1 {
-  display: flex;
-  flex-direction: row;
+#advertisements #text {
+  grid-area: txt;
+  z-index: 1;
+}
+#advertisements #text h1 {
+  text-align: right;
+  margin-top: -150px;
+  font-size: 64px;
+}
+#advertisements #text a {
+  text-align: right;
+  margin-top: -130px;
+  font-size: 13px;
+}
+#advertisements #awardwinning {
+  grid-area: award;
 }
 #advertisements #awardwinning img {
   width: 50%;
+}
+#advertisements #awardtxt {
+  grid-area: awardtxt;
+}
+#advertisements #awardtxt h1 {
+  font-size: 40px;
+  z-index: 1;
+  margin-top: -90px;
+  color: white;
+  text-shadow: 1px 1px #000;
+}
+#advertisements #awardtxt a {
+  color: white;
+  margin-top: -80px;
+  margin-left: 30px;
+}
+#advertisements #Backers {
+  grid-area: back;
 }
 #advertisements #Backers h2 {
   text-align: center;
 }
 #advertisements #backer {
+  grid-area: backs;
+}
+#advertisements #backer ul {
+  display: flex;
   list-style: none;
   justify-content: space-between;
   justify-content: space-evenly;
 }
-#advertisements img {
-  width: 75%;
+#advertisements #backer ul li {
+  flex: 0;
+}
+#advertisements #backer ul li:nth-child(-n+3) img {
+  display: none;
+}
+@media (min-width: 1024px) {
+  #advertisements {
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: "icons icons" "hund hund" "txt txt" "award awardtxt" "back back" "backs backs";
+  }
+  #advertisements #features {
+    display: block;
+    text-align: center;
+  }
+  #advertisements #awardwinning {
+    width: 100%;
+  }
+  #advertisements #text {
+    margin-bottom: 180px;
+  }
+  #advertisements #text h1 {
+    text-align: center;
+    font-size: 64px;
+  }
+  #advertisements #text a {
+    text-align: center;
+    font-size: 32px;
+  }
+  #advertisements #backer ul {
+    justify-content: center;
+    justify-content: space-evenly;
+  }
+  #advertisements #backer ul li {
+    display: flex;
+  }
+  #advertisements #backer ul li:nth-child(-n+3) img {
+    display: block;
+  }
+  #advertisements #awardtxt {
+    margin-bottom: 130px;
+  }
+  #advertisements #awardtxt h1 {
+    text-align: left;
+    font-size: 110px;
+    color: black;
+    margin-top: 10px;
+  }
+  #advertisements #awardtxt a {
+    font-size: 32px;
+    margin-top: -200px;
+  }
+  #advertisements #backer {
+    margin-bottom: 180px;
+  }
 }
 
 #bottom {
@@ -659,13 +840,14 @@ footer {
   grid-area: img;
   text-align: center;
 }
-#bottom h2 {
+#bottom #future {
   grid-area: txt;
+}
+#bottom #future h1 {
   text-align: left;
   font-size: 36px;
 }
-#bottom a {
-  grid-area: txt;
+#bottom #future a {
   text-align: left;
   font-size: 13px;
 }
@@ -674,42 +856,83 @@ footer {
     grid-template-columns: 1fr;
     grid-template-areas: "img" "txt";
   }
-  #bottom h2 {
+  #bottom picture {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+  }
+  #bottom #future h1 {
     font-size: 128px;
     text-align: center;
+    margin-top: -100px;
   }
-  #bottom a {
+  #bottom #future a {
     font-size: 32px;
-    text-align: right;
+    text-align: center;
   }
 }
 
 #glowforge {
   display: grid;
   grid-template-columns: 1fr;
-  grid-template-areas: "picture" "information" "airpicture" "airfilter";
+  grid-template-areas: "picture" "information" "button" "para" "airpicture";
 }
-#glowforge #pocture {
+#glowforge #picture {
   grid-area: picture;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 #glowforge #info {
   grid-area: information;
+  margin-bottom: 100px;
+  text-align: center;
 }
 #glowforge #info h3 {
+  text-align: center;
   font-size: 32px;
   color: black;
 }
 #glowforge #info h5 {
+  text-align: center;
   font-size: 15px;
   color: black;
 }
-#glowforge #info #buttons {
+#glowforge #button {
+  grid-area: button;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  background-color: #5AB5CB;
+  margin-left: 92px;
+  margin-right: 92px;
+  padding-top: -50px;
+  padding-bottom: -50px;
+  padding-left: 50px;
+  padding-right: 150px;
+}
+#glowforge #button a {
   font-size: 20px;
   color: white;
-  background-color: #5AB5CB;
-  background-size: auto;
+  display: flex;
+  align-items: center;
+  text-decoration: none;
 }
-#glowforge #info p {
+#glowforge #button img {
+  padding-top: 18px;
+  padding-right: 16px;
+}
+#glowforge #button h3 {
+  text-align: center;
+  color: white;
+  text-shadow: 1px solid black;
+}
+#glowforge #paragraph {
+  grid-area: para;
+}
+#glowforge #paragraph p {
+  text-align: center;
   font-size: 16px;
   color: black;
 }
@@ -717,22 +940,49 @@ footer {
   grid-area: airpicture;
   width: 100%;
 }
-#glowforge #airfilter {
-  grid-area: airfilter;
+#glowforge #airpicture img {
+  float: left;
+  width: 50%;
 }
-#glowforge #airfilter h3 {
-  font-size: 32px;
-  color: black;
+#glowforge #airpicture h3 {
+  text-align: left;
 }
-#glowforge #airfilter p {
+#glowforge #airpicture h4 {
+  text-align: left;
+}
+#glowforge #airpicture p {
   font-size: 10px;
   color: black;
 }
 @media (min-width: 1024px) {
   #glowforge {
     grid-template-columns: 1fr 1fr;
-    grid-template-areas: "picture information" "airpicture airfilter";
+    grid-template-areas: "picture information" "picture button" "picture para" "airpicture airpicture" "airfilter airfilter";
   }
+}
+#glowforge #picture {
+  width: 100%;
+}
+#glowforge #info h3 {
+  font-size: 48px;
+}
+#glowforge #info h5 {
+  font-size: 20px;
+}
+#glowforge #button h3 {
+  font-size: 48px;
+}
+#glowforge #paragraph {
+  font-size: 16px;
+}
+#glowforge #airpicture h3 {
+  font-size: 56px;
+}
+#glowforge #airpicture h4 {
+  font-size: 48px;
+}
+#glowforge #airpicture p {
+  font-size: 20px;
 }
 
 #work {
@@ -742,6 +992,7 @@ footer {
 }
 #work #dimensionn {
   grid-area: dimension;
+  margin-bottom: 75px;
 }
 #work #dimensionn h2 {
   color: black;
@@ -751,6 +1002,7 @@ footer {
 }
 #work #workkkk {
   grid-area: work;
+  margin-bottom: 60px;
 }
 #work #workkkk h2 {
   color: black;
@@ -760,9 +1012,12 @@ footer {
 }
 #work #imageprint {
   grid-area: images;
+  margin-bottom: 60px;
+  width: 100%;
 }
 #work #materialss {
   grid-area: materials;
+  margin-bottom: 35px;
 }
 #work #materialss h2 {
   color: black;
@@ -773,6 +1028,19 @@ footer {
 #work #warning {
   grid-area: warning;
   background-color: #4791A2;
+  padding-top: 80px;
+  padding-bottom: 50px;
+}
+#work #warning img {
+  float: left;
+}
+#work #warning h3 {
+  float: left;
+  color: white;
+}
+#work #warning p {
+  padding-left: 20px;
+  float: left;
   color: white;
 }
 #work #SOFTWARE {
@@ -795,62 +1063,617 @@ footer {
 }
 #work #imageseries {
   grid-area: imageseries;
+  padding-bottom: 38px;
+}
+#work #imageseries ul {
+  list-style: none;
+}
+#work #imageseries :nth-child(-n+2) ul img {
+  display: none;
 }
 @media (min-width: 1024px) {
   #work {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-template-areas: "dimension images" "work images" "materials imageseries" "warning warning" "software camera";
+    grid-template-areas: "work  images" "dimension images" "materials imageseries" "warning warning" "software camera";
+    margin-top: 180px;
+  }
+  #work #dimensionn {
+    margin-bottom: 68px;
+  }
+  #work #imageprint img {
+    width: 100%;
+  }
+  #work #warning {
+    margin-bottom: 100px;
+  }
+  #work #SOFTWARE {
+    margin-bottom: 100px;
+  }
+  #work #Camera {
+    margin-bottom: 100px;
+  }
+  #work #imageseries li:nth-child(-n+2) img {
+    display: inline-block;
   }
 }
 
 #reviews02 {
   display: grid;
-  grid-template-columns: 1fr;
-  grid-template-areas: "title" "userreviews" "bottombutton";
+  grid-template-columns: 1fr 1fr;
+  grid-template-areas: "title title" "userimg01 user01info" "userimg02 user02info" "userimg03 user03info" "seem seem";
   margin-bottom: 78px;
 }
-#reviews02 h2 {
+#reviews02 #title {
   grid-area: title;
-  color: black;
   text-align: center;
   margin-bottom: 24px;
   margin-top: 93px;
 }
-#reviews02 #users {
-  grid-area: userreviews;
+#reviews02 #title h2 {
+  color: black;
+}
+#reviews02 #all {
   background-color: black;
-  background-size: contain;
-  text-align: center;
-  margin-left: 16px;
-  margin-right: 16px;
-  width: 358px;
-  height: 251px;
+  border-radius: 25px;
+  padding-top: 105px;
+  padding-bottom: 105px;
+  padding-left: 43px;
+  padding-right: 43px;
 }
-#reviews02 #users #content {
-  border-color: white;
+#reviews02 #user01all {
+  display: flex;
+  border: 6px solid white;
+  border-radius: 25px;
+  margin-top: 70px;
 }
-#reviews02 #users #content h4 {
+#reviews02 #user01 {
+  display: flex;
+  grid-area: userimg01;
   text-align: left;
+  padding-right: 30px;
+}
+#reviews02 #user01 img {
+  width: 100%;
+}
+#reviews02 #user01info {
+  grid-area: user01info;
+}
+#reviews02 #user01info h4 {
   color: white;
+  text-align: left;
   font-size: 12px;
 }
-#reviews02 #users #content p {
-  font-size: 7px;
+#reviews02 #user01info p {
   text-align: left;
   color: white;
+  font-size: 7px;
 }
-#reviews02 #users #content img {
-  width: 25%;
+#reviews02 #user02all {
+  display: flex;
+  border: 6px solid white;
+  border-radius: 25px;
+  margin-top: 70px;
 }
-#reviews02 #users a {
-  grid-area: bottombutton;
+#reviews02 #user02 {
+  display: flex;
+  text-align: left;
+  grid-area: userimg02;
+  padding-right: 30px;
+}
+#reviews02 #user02 img {
+  width: 100%;
+}
+#reviews02 #user02info {
+  grid-area: user02info;
+}
+#reviews02 #user02info h4 {
+  color: white;
+  text-align: left;
+  font-size: 12px;
+}
+#reviews02 #user02info p {
+  text-align: left;
+  color: white;
+  font-size: 7px;
+}
+#reviews02 #user03all {
+  display: flex;
+  border: 6px solid white;
+  border-radius: 25px;
+  margin-top: 70px;
+}
+#reviews02 #user03 {
+  display: flex;
+  grid-area: userimg03;
+  padding-right: 30px;
+}
+#reviews02 #user03 img {
+  width: 100%;
+}
+#reviews02 #user03info {
+  grid-area: user03info;
+}
+#reviews02 #user03info h4 {
+  color: white;
+  text-align: left;
+  font-size: 12px;
+}
+#reviews02 #user03info p {
+  color: white;
+  text-align: left;
+  font-size: 7px;
+}
+#reviews02 #seem {
+  grid-area: seem;
+  text-align: center;
+}
+#reviews02 #seem h5 {
   color: black;
   text-align: center;
 }
+#reviews02 #seem a {
+  color: black;
+}
 @media (min-width: 1024px) {
-  #reviews02 {
-    grid-template-columns: 1fr;
-    grid-template-areas: "title" "userreviews" "bottombutton";
+  #reviews02 #user01info h4 {
+    font-size: 32px;
+  }
+  #reviews02 #user01info p {
+    font-size: 16px;
+  }
+  #reviews02 #user02info h4 {
+    font-size: 32px;
+  }
+  #reviews02 #user02info p {
+    font-size: 16px;
+  }
+  #reviews02 #user03info h4 {
+    font-size: 32px;
+  }
+  #reviews02 #user03info p {
+    font-size: 16px;
+  }
+}
+
+#thankyou {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-areas: "start" "tutorial" "map";
+  margin-bottom: 240px;
+}
+#thankyou #start {
+  grid-area: start;
+  text-align: center;
+}
+#thankyou #start h5 {
+  font-size: 13px;
+}
+#thankyou #start h1 {
+  font-size: 32px;
+}
+#thankyou #woo {
+  grid-area: tutorial;
+  text-align: center;
+  padding-bottom: 113px;
+}
+#thankyou #woo img {
+  text-align: center;
+  width: 73%;
+}
+#thankyou #woo h3 {
+  text-align: center;
+}
+#thankyou #materials {
+  grid-area: map;
+  text-align: center;
+}
+#thankyou #materials img {
+  width: 68%;
+  text-align: center;
+}
+@media (min-width: 1024px) {
+  #thankyou {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: "start start" "tutorial map";
+    margin-bottom: 175px;
+  }
+  #thankyou #start h5 {
+    font-size: 32px;
+    padding-bottom: -30px;
+  }
+  #thankyou #start h1 {
+    font-size: 64px;
+    letter-spacing: 121%;
+  }
+  #thankyou #woo {
+    margin-left: 352px;
+  }
+  #thankyou #woo h3 {
+    font-size: 32px;
+    text-decoration: underline;
+  }
+  #thankyou #materials {
+    margin-right: 272px;
+  }
+  #thankyou #materials img {
+    width: 63%;
+  }
+  #thankyou #materials h3 {
+    font-size: 32px;
+    text-decoration: underline;
+  }
+}
+
+#payment {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-areas: "top" "top01" "payment" "info" "first" "second" "third" "fourth" "fifth" "sixth" "seventh" "eigth" "price" "submit";
+  margin-left: 23px;
+}
+#payment #top {
+  grid-area: top;
+  text-align: center;
+}
+#payment #top01 {
+  text-align: center;
+  grid-area: top01;
+}
+#payment #top01 h4 {
+  font-size: 24px;
+}
+#payment #top01 p {
+  font-size: 13px;
+}
+#payment #top01 h2 {
+  font-size: 40px;
+}
+#payment #paymentinfo {
+  grid-area: info;
+}
+#payment #paymentinfo h3 {
+  font-size: 20px;
+}
+#payment #paymentoptions {
+  grid-area: payment;
+  display: flex;
+  flex: wrap;
+  justify-content: center;
+  align-items: center;
+}
+#payment #paymentoptions ul {
+  list-style: none;
+  flex: 0;
+}
+#payment #paymentoptions li {
+  padding: 24px;
+}
+#payment #first {
+  grid-area: first;
+  padding-top: 120px;
+}
+#payment #first form {
+  margin-left: 50px;
+  margin-right: 50px;
+}
+#payment #first input[type=text], #payment select {
+  width: 50%;
+  padding: 104px 20px;
+  margin: 4px 0;
+  display: inline-block;
+  box-sizing: border-box;
+  border: none;
+  border-bottom: 2px solid black;
+}
+#payment #second {
+  grid-area: second;
+  padding-top: 64px;
+}
+#payment #second form {
+  margin-left: 50px;
+  margin-right: 50px;
+}
+#payment #second input[type=text], #payment select {
+  width: 45%;
+  padding: 104px 20px;
+  margin: 4px 0;
+  display: inline-block;
+  box-sizing: border-box;
+  border: none;
+  border-bottom: 2px solid black;
+}
+#payment #third {
+  grid-area: third;
+  padding-top: 64px;
+}
+#payment #third form {
+  margin-left: 50px;
+  margin-right: 50px;
+}
+#payment #third input[type=text], #payment select {
+  width: 45%;
+  padding: 104px 20px;
+  margin: 4px 0;
+  display: inline-block;
+  box-sizing: border-box;
+  border: none;
+  border-bottom: 2px solid black;
+}
+#payment #fourth {
+  grid-area: fourth;
+  padding-top: 64px;
+}
+#payment #fourth form {
+  margin-left: 50px;
+  margin-right: 50px;
+}
+#payment #fourth input[type=text], #payment select {
+  width: 45%;
+  padding: 104px 20px;
+  margin: 4px 0;
+  display: inline-block;
+  box-sizing: border-box;
+  border: none;
+  border-bottom: 2px solid black;
+}
+#payment #fifth {
+  grid-area: fifth;
+  padding-top: 64px;
+}
+#payment #fifth label {
+  margin-left: 50px;
+  margin-right: 50px;
+}
+#payment #sixth {
+  grid-area: sixth;
+  padding-top: 64px;
+  padding-right: 80px;
+}
+#payment #sixth form {
+  margin-left: 50px;
+  margin-right: 50px;
+}
+#payment #sixth input[type=text], #payment select {
+  width: 30%;
+  padding: 104px 20px;
+  margin: 4px 0;
+  display: inline-block;
+  box-sizing: border-box;
+  border: none;
+  border-bottom: 2px solid black;
+}
+#payment #seventh {
+  grid-area: seventh;
+  padding-top: 64px;
+}
+#payment #seventh form {
+  margin-left: 50px;
+  margin-right: 50px;
+}
+#payment #seventh input[type=text], #payment select {
+  width: 45%;
+  padding: 104px 20px;
+  margin: 4px 0;
+  display: inline-block;
+  box-sizing: border-box;
+  border: none;
+  border-bottom: 2px solid black;
+}
+#payment #eigth {
+  grid-area: eigth;
+  padding-top: 64px;
+}
+#payment #eigth form {
+  margin-left: 50px;
+  margin-right: 50px;
+}
+#payment #eigth input[type=text], #payment select {
+  width: 30%;
+  padding: 104px 20px;
+  margin: 4px 0;
+  display: inline-block;
+  box-sizing: border-box;
+  border: none;
+  border-bottom: 2px solid black;
+}
+#payment #price-submit {
+  grid-area: price;
+}
+#payment #price-submit #price-end {
+  text-align: center;
+}
+#payment #price-submit #price-end img {
+  width: 50%;
+}
+#payment #price-submit #price-end #glow {
+  display: none;
+}
+#payment #price-submit #price-end h2 {
+  font-size: 40px;
+}
+#payment #price-submit #submit {
+  text-align: center;
+  margin-top: 100px;
+}
+#payment #price-submit #submit input[type=button], #payment #price-submit input[type=submit], #payment #price-submit input[type=reset] {
+  background-color: #2CC1E2;
+  border: none;
+  color: white;
+  text-decoration: none;
+  font-size: 16px;
+}
+@media (min-width: 1024px) {
+  #payment {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: "top top01" "payment payment" "info info" "first first" "second second" "third third" "fourth fourth" "fifth fifth" "sixth sixth" "seventh seventh" "eigth eigth" "price submit";
+    margin-left: 85px;
+  }
+  #payment #paymentinfo h3 {
+    font-size: 48px;
+  }
+  #payment #top-- {
+    display: flex;
+  }
+  #payment #top {
+    display: flex;
+  }
+  #payment #top01 h4 {
+    font-size: 48px;
+    text-align: left;
+  }
+  #payment #top01 p {
+    font-size: 24px;
+    text-align: left;
+  }
+  #payment #top01 h2 {
+    display: none;
+  }
+  #payment #paymentoptions ul {
+    display: flex;
+    flex-direction: row;
+    flex: wrap;
+  }
+  #payment #paymentoptions li {
+    padding: 130px;
+  }
+  #payment #first {
+    grid-area: first;
+    text-align: left;
+  }
+  #payment #first input[type=text], #payment select {
+    width: 50%;
+    padding: 104px 20px;
+    margin: 4px 0;
+    display: inline-block;
+    box-sizing: border-box;
+    border: none;
+    border-bottom: 2px solid black;
+  }
+  #payment #second {
+    grid-area: second;
+    padding-top: 64px;
+    text-align: left;
+  }
+  #payment #second input[type=text], #payment select {
+    width: 45%;
+    padding: 104px 20px;
+    margin: 4px 0;
+    display: inline-block;
+    box-sizing: border-box;
+    border: none;
+    border-bottom: 2px solid black;
+  }
+  #payment #third {
+    grid-area: third;
+    padding-top: 64px;
+    padding-right: 90px;
+    text-align: left;
+  }
+  #payment #third input[type=text], #payment select {
+    width: 45%;
+    padding: 104px 20px;
+    margin: 4px 0;
+    display: inline-block;
+    box-sizing: border-box;
+    border: none;
+    border-bottom: 2px solid black;
+  }
+  #payment #fourth {
+    grid-area: fourth;
+    padding-top: 64px;
+    padding-right: 90px;
+    text-align: left;
+  }
+  #payment #fourth input[type=text], #payment select {
+    width: 45%;
+    padding: 104px 20px;
+    margin: 4px 0;
+    display: inline-block;
+    box-sizing: border-box;
+    border: none;
+    border-bottom: 2px solid black;
+  }
+  #payment #fifth {
+    grid-area: fifth;
+    padding-top: 64px;
+    text-align: left;
+  }
+  #payment #sixth {
+    grid-area: sixth;
+    padding-top: 64px;
+    padding-right: 83px;
+    text-align: left;
+  }
+  #payment #sixth input[type=text], #payment select {
+    width: 15%;
+    padding: 104px 20px;
+    margin: 4px 0;
+    display: inline-block;
+    box-sizing: border-box;
+    border: none;
+    border-bottom: 2px solid black;
+  }
+  #payment #seventh {
+    grid-area: seventh;
+    padding-top: 64px;
+    padding-right: 90px;
+    text-align: left;
+  }
+  #payment #seventh input[type=text], #payment select {
+    width: 45%;
+    padding: 104px 20px;
+    margin: 4px 0;
+    display: inline-block;
+    box-sizing: border-box;
+    border: none;
+    border-bottom: 2px solid black;
+  }
+  #payment #eigth {
+    grid-area: eigth;
+    padding-top: 64px;
+    padding-right: 90px;
+    text-align: left;
+  }
+  #payment #eigth input[type=text], #payment select {
+    width: 15%;
+    padding: 104px 20px;
+    margin: 4px 0;
+    display: inline-block;
+    box-sizing: border-box;
+    border: none;
+    border-bottom: 2px solid black;
+  }
+  #payment #price-submit {
+    display: flex;
+    flex-direction: row;
+  }
+  #payment #price-submit #price-end {
+    text-align: center;
+    display: flex;
+  }
+  #payment #price-submit #price-end #glow {
+    display: block;
+    width: 25%;
+  }
+  #payment #price-submit #price-end img {
+    width: 25%;
+    padding-right: 100px;
+  }
+  #payment #price-submit #price-end h2 {
+    font-size: 64px;
+    padding-right: 85px;
+  }
+  #payment #price-submit #submit {
+    text-align: right;
+    display: flex;
+    margin-top: 100px;
+  }
+  #payment #price-submit #submit input[type=button], #payment #price-submit input[type=submit], #payment #price-submit input[type=reset] {
+    background-color: #2CC1E2;
+    border: none;
+    color: white;
+    text-decoration: none;
   }
 }

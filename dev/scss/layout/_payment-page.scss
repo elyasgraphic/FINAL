@@ -1,22 +1,429 @@
 #payment{
-    display: flex;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-areas: 
+    "top"
+    "top01"
+    "payment"
+    "info"
+    "first"
+    "second"
+    "third"
+    "fourth"
+    "fifth"
+    "sixth"
+    "seventh"
+    "eigth"
+    "price"
+    "submit";
+    margin-left: 23px;
 
     #top{
-        flex-direction: row;
+        grid-area: top;
+        text-align: center;
     }
+
+    #top01{
+        text-align: center;
+        grid-area: top01;
+    }
+    #top01 h4{
+            font-size: 24px;
+        }
+
+    #top01 p{
+            font-size: 13px;
+        }
+    #top01 h2{
+        font-size: 40px;
+    }
+
+    #paymentinfo{
+        grid-area: info;
+    }
+
+    #paymentinfo h3{
+            font-size: 20px;
+        }
 
     #paymentoptions{
-        flex-direction: row;
+        grid-area: payment;
+        display: flex;
+        flex: wrap;
+        justify-content: center;
+        align-items: center;
+    }
+    #paymentoptions ul{
+        list-style: none;
+        flex: 0;
     }
 
-    #forms{
-        form{
-             input{
-            width: 100%;
-            border: none;
-            border-bottom: 2px;
-        }
-        }
-       
+    #paymentoptions li{
+        padding: 24px;
     }
+
+    #first{
+        grid-area: first;
+        
+        padding-top: 120px;
+
+    }
+    #first form{
+        margin-left: 50px;
+        margin-right: 50px;
+    }
+    #first input[type=text], select{
+        width: 50%;
+    padding: 104px 20px;
+    margin: 4px 0;
+    display: inline-block;
+    box-sizing: border-box;
+    border: none;
+    border-bottom: 2px solid black;
+    }
+
+    #second{
+        grid-area: second;
+        
+        padding-top: 64px;
+        
+    }
+    #second form{
+        margin-left: 50px;
+        margin-right: 50px;
+    }
+    #second input[type=text], select{
+        width: 45%;
+    padding: 104px 20px;
+    margin: 4px 0;
+    display: inline-block;
+    box-sizing: border-box;
+    border: none;
+    border-bottom: 2px solid black;
+    }
+    #third{
+        grid-area: third;
+        padding-top: 64px;
+    }
+
+    #third form{
+        margin-left: 50px;
+        margin-right: 50px;
+    }
+    #third input[type=text], select{
+        width: 45%;
+    padding: 104px 20px;
+    margin: 4px 0;
+    display: inline-block;
+    box-sizing: border-box;
+    border: none;
+    border-bottom: 2px solid black;
+    }
+    #fourth{
+        grid-area: fourth;
+        padding-top: 64px;
+    }
+    #fourth form{
+        margin-left: 50px;
+        margin-right: 50px;
+    }
+    #fourth input[type=text], select{
+        width: 45%;
+    padding: 104px 20px;
+    margin: 4px 0;
+    display: inline-block;
+    box-sizing: border-box;
+    border: none;
+    border-bottom: 2px solid black;
+    }
+    #fifth{
+        grid-area: fifth;
+        padding-top: 64px;
+    }
+
+    #fifth label{
+        margin-left: 50px;
+        margin-right: 50px;
+    }
+
+    #sixth{
+        grid-area: sixth;
+        padding-top: 64px;
+        padding-right: 80px;
+
+    }
+    #sixth form{
+        margin-left: 50px;
+        margin-right: 50px;
+    }
+    #sixth input[type=text], select{
+        width: 30%;
+    padding: 104px 20px;
+    margin: 4px 0;
+    display: inline-block;
+    box-sizing: border-box;
+    border: none;
+    border-bottom: 2px solid black;
+    }
+
+    #seventh{
+        grid-area: seventh;
+        padding-top: 64px;
+    }
+
+    #seventh form{
+        margin-left: 50px;
+        margin-right: 50px;
+    }
+    #seventh input[type=text], select{
+        width: 45%;
+    padding: 104px 20px;
+    margin: 4px 0;
+    display: inline-block;
+    box-sizing: border-box;
+    border: none;
+    border-bottom: 2px solid black;
+    }
+
+    #eigth{
+        grid-area: eigth;
+        padding-top: 64px;
+    }
+
+    #eigth form{
+        margin-left: 50px;
+        margin-right: 50px;
+    }
+
+    #eigth input[type=text], select{
+        width: 30%;
+    padding: 104px 20px;
+    margin: 4px 0;
+    display: inline-block;
+    box-sizing: border-box;
+    border: none;
+    border-bottom: 2px solid black;
+    }
+    #price-submit{
+        grid-area: price;
+    
+    #price-end{
+        text-align: center;
+    }
+    #price-end img{
+        width: 50%;
+    }
+    #price-end #glow{
+        display: none;
+    }
+    #price-end h2{
+        font-size: 40px;
+    }
+    #submit{
+        text-align: center;
+        margin-top: 100px;
+    }
+    #submit input[type=button], input[type=submit], input[type=reset] {
+        background-color: #2CC1E2;
+        border: none;
+        color: white;
+        text-decoration: none;
+        font-size: 16px;
+      }
+   }
+    @include lg{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-areas: 
+        "top top01"
+        "payment payment"
+        "info info"
+        "first first"
+        "second second"
+        "third third"
+        "fourth fourth"
+        "fifth fifth"
+        "sixth sixth"
+        "seventh seventh"
+        "eigth eigth"
+        "price submit";
+        margin-left: 85px;
+        
+        #paymentinfo{
+            h3{
+                font-size: 48px;
+            }
+        }
+        #top--{
+            display: flex;
+        }
+        #top{
+            display: flex;
+        }
+        #top01 h4{
+            font-size: 48px ;
+            text-align: left;
+        }
+        #top01 p{
+            font-size: 24px;
+            text-align: left;
+        }
+        #top01 h2{
+            display: none;
+        }
+
+        #paymentoptions ul{
+            display: flex;
+            flex-direction: row;
+            flex: wrap;
+        }
+        #paymentoptions li{
+            padding: 130px;
+        }
+        #first{
+            grid-area: first;
+            text-align: left;
+        }
+        #first input[type=text], select{
+            width: 50%;
+        padding: 104px 20px;
+        margin: 4px 0;
+        display: inline-block;
+        box-sizing: border-box;
+        border: none;
+        border-bottom: 2px solid black;
+        }
+    
+        #second{
+            grid-area: second;
+            padding-top: 64px;
+            text-align: left;
+            
+        }
+        #second input[type=text], select{
+            width: 45%;
+        padding: 104px 20px;
+        margin: 4px 0;
+        display: inline-block;
+        box-sizing: border-box;
+        border: none;
+        border-bottom: 2px solid black;
+        }
+        #third{
+            grid-area: third;
+            padding-top: 64px;
+            padding-right: 90px;
+            text-align: left;
+        }
+        #third input[type=text], select{
+            width: 45%;
+        padding: 104px 20px;
+        margin: 4px 0;
+        display: inline-block;
+        box-sizing: border-box;
+        border: none;
+        border-bottom: 2px solid black;
+        }
+        #fourth{
+            grid-area: fourth;
+            padding-top: 64px;
+            padding-right: 90px;
+            text-align: left;
+        }
+        #fourth input[type=text], select{
+            width: 45%;
+        padding: 104px 20px;
+        margin: 4px 0;
+        display: inline-block;
+        box-sizing: border-box;
+        border: none;
+        border-bottom: 2px solid black;
+        }
+        #fifth{
+            grid-area: fifth;
+            padding-top: 64px;
+            text-align: left;
+
+        }
+        #sixth{
+            grid-area: sixth;
+            padding-top: 64px;
+            padding-right: 83px;
+            text-align: left;
+
+        }
+        #sixth input[type=text], select{
+            width: 15%;
+        padding: 104px 20px;
+        margin: 4px 0;
+        display: inline-block;
+        box-sizing: border-box;
+        border: none;
+        border-bottom: 2px solid black;
+        }
+
+        #seventh{
+            grid-area: seventh;
+            padding-top: 64px;
+            padding-right: 90px;
+            text-align: left;
+        }
+        #seventh input[type=text], select{
+            width: 45%;
+        padding: 104px 20px;
+        margin: 4px 0;
+        display: inline-block;
+        box-sizing: border-box;
+        border: none;
+        border-bottom: 2px solid black;
+        }
+        
+        #eigth{
+            grid-area: eigth;
+            padding-top: 64px;
+            padding-right: 90px;
+            text-align: left;
+        }
+        #eigth input[type=text], select{
+            width: 15%;
+        padding: 104px 20px;
+        margin: 4px 0;
+        display: inline-block;
+        box-sizing: border-box;
+        border: none;
+        border-bottom: 2px solid black;
+        }
+        #price-submit{
+            display: flex;
+            flex-direction: row;
+       
+        #price-end{
+            text-align: center;
+            display: flex;
+        }
+        #price-end #glow{
+            display: block;
+            width: 25%;
+        }
+        #price-end img{
+            width: 25%;
+            padding-right: 100px;
+        }
+        #price-end h2{
+            font-size: 64px;
+            padding-right: 85px ;
+        }
+        #submit{
+            text-align: right;
+            display: flex;
+            margin-top: 100px;
+        }
+        #submit input[type=button], input[type=submit], input[type=reset] {
+            background-color: #2CC1E2;
+            border: none;
+            color: white;
+            text-decoration: none;
+          }
+    } 
+}
 }

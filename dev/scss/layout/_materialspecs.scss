@@ -10,91 +10,141 @@
         "software"
         "camera"
         "imageseries";
+        
 
     #dimensionn {
         grid-area: dimension;
-
-        h2 {
-            color: black;
-        }
-
-        p {
-            color: black;
-        }
+        margin-bottom: 75px;
     }
+
+    #dimensionn h2 {
+            color: black;
+        }
+
+    #dimensionn p {
+            color: black;
+        }
 
     #workkkk {
         grid-area: work;
-
-        h2 {
-            color: black;
-        }
-
-        p {
-            color: black;
-        }
+        margin-bottom: 60px;
     }
+    #workkkk h2 {
+            color: black;
+        }
+
+    #workkkk p {
+            color: black;
+        }
 
     #imageprint {
         grid-area: images;
+        margin-bottom: 60px;
+        width: 100%;
     }
 
     #materialss {
         grid-area: materials;
-
-        h2 {
-            color: black;
-        }
-
-        p {
-            color: black;
-        }
+        margin-bottom: 35px;
     }
+
+    #materialss h2 {
+            color: black;
+        }
+
+    #materialss p {
+            color: black;
+        }
 
     #warning {
         grid-area: warning;
         background-color: #4791A2;
-        color: white;
+        padding-top: 80px;
+        padding-bottom: 50px;
     }
+
+    #warning img {
+            float: left;
+        }
+
+    #warning h3 {
+            float: left;
+            color: white;
+        }
+
+    #warning p {
+        padding-left: 20px;
+            float: left;
+            color: white;
+        }
 
     #SOFTWARE {
         grid-area: software;
-
-        h2 {
-            color: black;
-        }
-
-        p {
-            color: black;
-        }
     }
+
+    #SOFTWARE h2 {
+            color: black;
+        }
+
+    #SOFTWARE p {
+            color: black;
+        }
 
     #Camera {
         grid-area: camera;
-
-        h2 {
-            color: black;
-        }
-
-        p {
-            color: black;
-        }
     }
+    #Camera h2 {
+            color: black;
+        }
+
+    #Camera p {
+            color: black;
+        }
 
     #imageseries {
         grid-area: imageseries;
-        
+        padding-bottom: 38px ;
+    }
+
+    #imageseries ul{
+        list-style: none;
+    }
+
+    #imageseries :nth-child(-n+2) ul img{
+        display: none;
     }
 
     @include lg {
         display: grid;
         grid-template-columns: 1fr 1fr;
         grid-template-areas:
+            "work  images"
             "dimension images"
-            "work images"
             "materials imageseries"
             "warning warning"
             "software camera";
-    }
+        margin-top: 180px;
+        #dimensionn {
+            margin-bottom: 68px;
+        }
+        #imageprint img{
+            width: 100%;
+        }
+        
+        #warning {
+            margin-bottom: 100px;
+        }
 
+        #SOFTWARE {
+            margin-bottom: 100px;
+        }
+
+        #Camera {
+
+            margin-bottom: 100px;
+        }
+        #imageseries li:nth-child(-n+2) img{
+            display: inline-block;
+          }
+    }
 }

@@ -8,31 +8,44 @@
         grid-area: img;
         text-align: center;
         
+        
     }
-    h2{
+    #future{
         grid-area: txt;
+       h1{
         text-align: left;
         font-size: 36px;
 
     }
     a{
-        grid-area: txt;
         text-align: left;
         font-size: 13px;
+    } 
     }
+    
     @include lg{
         grid-template-columns: 1fr;
         grid-template-areas: 
         "img"
         "txt";
+        
+        picture{
+            width: 100%;
+            margin: 0;
+            padding: 0;
+        }
+        #future{
 
-        h2{
+          h1{
             font-size: 128px;
             text-align: center;
+            margin-top: -100px;
         }
         a{
             font-size: 32px;
-            text-align: right;
+            text-align: center;
+        }  
         }
+        
     }
 }
