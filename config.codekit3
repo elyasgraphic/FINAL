@@ -9,19 +9,6 @@
   ],
   "creatorBuild" : "34472",
   "files" : {
-    "\/BurgerMenu.png" : {
-      "ft" : 32768,
-      "iS" : 212,
-      "oA" : 0,
-      "oAP" : "\/BurgerMenu.png",
-      "oF" : 0,
-      "oIPL" : 0,
-      "opt" : 0,
-      "oT" : 1,
-      "ou" : "lpckwebp-none",
-      "q" : 90,
-      "rq" : 75
-    },
     "\/deploy\/checkout_page.html" : {
       "cB" : 0,
       "ft" : 8192,
@@ -122,6 +109,19 @@
       "iS" : 90773,
       "oA" : 0,
       "oAP" : "\/deploy\/img\/blackcarving.png",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 0,
+      "oT" : 1,
+      "ou" : "lpckwebp-none",
+      "q" : 90,
+      "rq" : 75
+    },
+    "\/deploy\/img\/BurgerMenu.png" : {
+      "ft" : 32768,
+      "iS" : 212,
+      "oA" : 0,
+      "oAP" : "\/deploy\/img\/BurgerMenu.png",
       "oF" : 0,
       "oIPL" : 0,
       "opt" : 0,
